@@ -1,4 +1,3 @@
-import './App.css';
 import React, {Component}  from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import Header from './Components/Header';
@@ -13,8 +12,7 @@ class App extends Component {
                 <Container>
                     <Row>
                         <Col>
-                            
-                            <Header></Header>
+                           <Header></Header>
                         </Col>
                     </Row>
                 </Container>
