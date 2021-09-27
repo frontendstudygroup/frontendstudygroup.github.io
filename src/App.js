@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {Component}  from 'react';
+import {Container, Row, Col} from 'react-bootstrap';
+import Header from './Components/Header';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to Hacktoberfest!
-        </p>
-        <a
-          className="App-link"
-          href="http://womenwhocode.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Supported by Women Who Code
-        </a>
-      </header>
-    </div>
-  );
+//import Timeline from './components/timeline'
+
+class App extends Component {
+    render() {
+        return (
+            <div>
+            <React.Fragment>
+                <Container>
+                    <Row>
+                        <Col>
+                            
+                            <Header></Header>
+                        </Col>
+                    </Row>
+                </Container>
+            </React.Fragment>
+            </div>
+        )
+    }
 }
 
 export default App;
