@@ -1,0 +1,123 @@
+
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+
+
+body {
+	font-family: $font-family-sans-serif;
+	background-color: #fff;
+	line-height: 1.9;
+	color: darken(#ccc, 25%);
+}
+
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-family-sans-serif;
+	color: $black;
+}
+a {
+	transition: .3s all ease;
+	&, &:hover {
+		text-decoration: none!important;
+	}
+}
+.text-black {
+	color: #000;
+}
+.content {
+	padding: 7rem 0;
+}
+
+.heading {
+	font-size: 2.5rem;
+	font-weight: 900;
+}
+.form-control {
+	border: none;
+	// border: 1px solid #ccc;
+	background: #f3f3f3;
+	&:active, &:focus {
+		outline: none;
+		box-shadow: none;
+		border-color: #000;
+		background: #f3f3f3;
+	}
+}
+.col-form-label {
+	color: #000;
+}
+.btn, .form-control, .custom-select {
+	height: 50px;
+}
+.custom-select {
+	&:active, &:focus {
+		outline: none;
+		box-shadow: none;
+		border-color: #000;
+	}
+}
+
+.btn {
+	border: none;
+	border-radius: 4px!important;
+	&.btn-primary {
+		background: $black;
+		color: $white;
+		padding: 15px 20px;
+	}
+	&:hover {
+		color: $white;
+	}
+	&:active, &:focus {
+		outline: none;
+		box-shadow: none;
+	}
+}
+
+.box {
+	padding: 40px;
+	background: $white;
+	box-shadow: -30px 30px 0px 0 rgba($black, .08);
+	h3 {
+		font-size: 14px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+}
+
+
+label.error {
+	font-size: 12px;
+	color: red;
+}
+
+#message {
+	resize: vertical;
+}
+#form-message-warning, #form-message-success {
+	display: none;
+}
+#form-message-warning {
+	color: #B90B0B;
+}
+#form-message-success {
+	color: #55A44E;
+	font-size: 18px;
+	font-weight: bold;
+}
+.submitting {
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+	display: none;
+	font-weight: bold;
+	font-size: 12px;
+	color: #000;
+}
