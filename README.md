@@ -20,9 +20,10 @@ Participation and maintenance of this project is completely voluntary and we are
 - Search in [Issues](https://github.com/frontendstudygroup/frontendstudygroup.github.io/issues) for open issues to work on
     - If you would like to make a suggestion for an enhancement, or report a defect, create an issue
 - Fork the repository (recommended if you are doing this for the first time)
+- Clone your forked repository to your pc ( git clone "url from clone option.)
 - Assign the issue to yourself
-- Comment in the issue about your approach to solving the problem
-- Get feedback from others
+- Comment on the issue about your approach to solving the problem
+- Get feedback from other contributors or project maintainers
 - Submit a pull request when you are ready
 
 Questions about front end? [Join the WWC Front End Slack](https://join.slack.com/t/womenwhocodefrontend/shared_invite/zt-gaic5y90-pDJK4H_NbObZ_MU_rcYc0A) and join the `#fe-beginner-studygroup` channel.
