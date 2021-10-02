@@ -1,0 +1,32 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'Brittany';
+  src: local('Brittany'), url(../fonts/FontsFree-Net-BrittanySignature.ttf) format('truetype');
+  font-display: swap;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
