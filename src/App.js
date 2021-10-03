@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Contact from './Contact'
+import './Contact_css.css'
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           Supported by Women Who Code
         </a>
       </header>
+      <Contact/>
     </div>
   );
 }

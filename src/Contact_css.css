@@ -38,6 +38,7 @@ body {
   border-bottom: 2px solid #78788c;
 }
 .FormContent:before {
+  text-align: left;
   content: attr(type);
   display: block;
   margin: 28px 0 0;
