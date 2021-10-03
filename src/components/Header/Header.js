@@ -27,7 +27,7 @@ const Header = () => {
                         </a>
                     </li>
                     <li className="option mobileOption" onClick={closeMobileMenu}>
-                        <a href="#">
+                        <a href="/resources">
                             Resources
                         </a>
                     </li>
@@ -44,7 +44,7 @@ const Header = () => {
                         </a>
                     </li>
                     <li className="optionDisplay" onClick={closeMobileMenu}>
-                        <a href="#">
+                        <a href="/resources">
                             Resources
                         </a>
                     </li>
