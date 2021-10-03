@@ -7,7 +7,7 @@ export default class Menubar extends Component {
         return (
             <div>
                 <Navbar bg="light" expand="lg">
-                    <Navbar.Brand href="#">Trend</Navbar.Brand>
+                    <Navbar.Brand href="/home">Logo</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -15,23 +15,25 @@ export default class Menubar extends Component {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link href="#action1">Home</Nav.Link>
-                            <Nav.Link href="#action2">Features</Nav.Link>
-                            <NavDropdown title="Products" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                            <Nav.Link href="/home">Home</Nav.Link>
+                            <Nav.Link href="/features">Features</Nav.Link>
+                            <NavDropdown title="Resources" id="navbarScrollingDropdown">
+                                <NavDropdown.Item href="/calendar">Calendar</NavDropdown.Item>
+                                <NavDropdown.Item href="/monthly">Monthly Calendar</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
+                                <NavDropdown.Item href="/pagination">Pagination</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#" >
+                            <Nav.Link href="/contactus" >
                                 Contact Us
                             </Nav.Link>
                         </Nav>
                        
                     </Navbar.Collapse>
+                   
                 </Navbar>
+                
             </div>
-
+ 
         )
     }
 }
