@@ -1,0 +1,151 @@
+[
+  {
+    "id": 1,
+    "name": "Google Summer of Code",
+    "url": "https://summerofcode.withgoogle.com/",
+    "eligibility_criteria": "none",
+    "internship_period": 3,
+    "application_period": ["March", "April"],
+    "stipend": true,
+    "location": ["Remote"]
+  },
+  {
+    "id": 2,
+    "name": "FSF",
+    "url": "https://www.fsf.org/volunteer/internships",
+    "eligibility_criteria": "none",
+    "internship_period": 3,
+    "application_period": ["April", "May"],
+    "stipend": false,
+    "location": ["Remote", "Boston, US"]
+  },
+  {
+    "id": 3,
+    "name": "X.Org Endless Vacation of Code",
+    "url": "https://www.x.org/wiki/XorgEVoC/",
+    "eligibility_criteria": "none",
+    "internship_period": 4,
+    "application_period": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "stipend": true,
+    "location": ["Remote"]
+  },
+  {
+    "id": 4,
+    "name": "RGSOC",
+    "url": "https://railsgirlssummerofcode.org/blog/2017-07-12-namaste-rgsoc-2017",
+    "eligibility_criteria": "For Girls only",
+    "internship_period": 3,
+    "application_period": ["February", "March", "April"],
+    "stipend": true,
+    "location": ["Remote"]
+  },
+  {
+    "id": 4,
+    "name": "DataONE",
+    "url": "https://old.dataone.org/internships",
+    "eligibility_criteria": "none",
+    "internship_period": 4,
+    "application_period": ["February", "March"],
+    "stipend": true,
+    "location": ["United States"]
+  },
+  {
+    "id": 5,
+    "name": "OpenDaylight",
+    "url": "http://archive15.opendaylight.org/community/summer-intern-program",
+    "eligibility_criteria": "none",
+    "internship_period": 3,
+    "application_period": ["January", "February", "March"],
+    "stipend": true,
+    "location": ["Remote"]
+  },
+  {
+    "id": 6,
+    "name": "Deeproot",
+    "url": "https://abhas.io/student-projects/",
+    "eligibility_criteria": "none",
+    "internship_period": 3,
+    "application_period": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "stipend": false,
+    "location": ["Bangalore", "Remote"]
+  },
+  {
+    "id": 7,
+    "name": "OPNFV",
+    "url": "https://wiki.opnfv.org/display/DEV/Internship-program",
+    "eligibility_criteria": "none",
+    "internship_period": 3,
+    "application_period": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "stipend": true,
+    "location": ["Remote"]
+  },
+  {
+    "id": 8,
+    "name": "Outreachy",
+    "url": "https://www.gnome.org/outreachy/",
+    "eligibility_criteria": "Women, trans and cisgendered women",
+    "internship_period": 3,
+    "application_period": ["February", "March", "April"],
+    "stipend": true,
+    "location": ["Remote"]
+  },
+  {
+    "id": 9,
+    "name": "Google Season of Docs",
+    "url": "https://developers.google.com/season-of-docs",
+    "eligibility_criteria": "Women, trans and cisgendered women",
+    "internship_period": 3,
+    "application_period": ["June", "July"],
+    "stipend": false,
+    "location": ["Remote"]
+  },
+  {
+    "id": 10,
+    "name": "Khan Academy",
+    "url": "https://www.khanacademy.org/careers/interns",
+    "eligibility_criteria": "none",
+    "internship_period": null,
+    "application_period": [],
+    "stipend": true,
+    "location": ["Remote"]
+  }
+]
