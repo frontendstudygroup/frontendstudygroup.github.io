@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import './Header.css';
 import WWCLogo from '../../assets/images/WWCode-Pride-Logo.png';
 import MenuIcon from '../../assets/images/MenuIcon.svg';
@@ -21,38 +22,26 @@ const Header = () => {
             </div>
             <div className="navContainer" >
                 <ul className={click ? "navOptions active" : "navOptions"}>
-                    <li className="option mobileOption" onClick={closeMobileMenu}>
-                        <a href="#">
+                    <Link to="#" className="option mobileOption" onClick={closeMobileMenu}>
                             About
-                        </a>
-                    </li>
-                    <li className="option mobileOption" onClick={closeMobileMenu}>
-                        <a href="/resources">
+                    </Link>
+                    <Link to="/resources" className="option mobileOption" onClick={closeMobileMenu}>
                             Resources
-                        </a>
-                    </li>
-                    <li className="option mobileOption" onClick={closeMobileMenu}>
-                        <a href="#">
+                    </Link>
+                    <Link to="#" className="option mobileOption" onClick={closeMobileMenu}>
                             Contact Us
-                        </a>
-                    </li>
+                    </Link>
                 </ul>
                 <ul className="navDisplay">
-                    <li className="optionDisplay" onClick={closeMobileMenu}>
-                        <a href="#">
+                    <Link to="#" className="optionDisplay" onClick={closeMobileMenu}>
                             About
-                        </a>
-                    </li>
-                    <li className="optionDisplay" onClick={closeMobileMenu}>
-                        <a href="/resources">
+                    </Link>
+                    <Link to="/resources" className="optionDisplay" onClick={closeMobileMenu}>
                             Resources
-                        </a>
-                    </li>
-                    <li className="optionDisplay" onClick={closeMobileMenu}>
-                        <a href="#">
+                    </Link>
+                    <Link to="#" className="optionDisplay" onClick={closeMobileMenu}>
                             Contact Us
-                        </a>
-                    </li>
+                    </Link>
                 </ul>
                 <div className="mobileMenu" onClick={handleClick}>
                     {click ? (
