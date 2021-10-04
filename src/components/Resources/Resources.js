@@ -6,13 +6,14 @@ import ResourcesList from '../data/data.json';
 export default function Resources() {
   return (
     <>
-      <section className="container">
-        <ul>
+      <div className="grid">
           {
-            ResourcesList.map (resource => <li key={resource.id}> {resource.name} </li>)
-          }
-        </ul>
-      </section>
+            ResourcesList.map(resource => 
+              <article key={resource.id}> 
+                <div className="text">{resource.name}
+               </div>
+              </article>)}
+      </div>     
 
     </>
   );
