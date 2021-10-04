@@ -10,7 +10,14 @@ We are collaborating with [Women Who Code Cloud](https://www.womenwhocode.com/cl
 
 ## Expectations
 
-Participation and maintenance of this project is completely voluntary and we are not committing to teach anything as part of this effort. If you want to practice together with us, this is a good place!
+- Participation and maintenance of this project is completely voluntary and we are not committing to teach anything as part of this effort. If you want to practice together with us, this is a good place!
+- We highly encourage you _not_ to use third party UI frameworks. For example, if you want to design a carousel or a tooltip, do it from scratch.
+    > However we do understand that sometimes we need to use some third party libraries like redux or react-dom-router. When in doubt discuss it on the issue you are working on.
+- Find your motivation to contribute to this repository and make sure you have the time.
+    > Life happens, we get it. Just let us know if you cannot do something you're assigned to and do NOT feel guilty about it.
+- Things work best for all of us when contribution goals are driven by you. We as maintainers will only guide you and validate your thought process.
+- Be open and honest in your communication.
+- Be selfish! Aim to do what you intend to learn and do not feel forced to work on something against your will.
 
 ## Code of Conduct
 
