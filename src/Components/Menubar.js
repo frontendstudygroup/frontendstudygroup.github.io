@@ -16,12 +16,12 @@ export default class Menubar extends Component {
                             navbarScroll
                         >
                             <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link href="/features">Features</Nav.Link>
-                            <NavDropdown title="Resources" id="navbarScrollingDropdown">
+                            <Nav.Link href="/resources">Resources</Nav.Link>
+                            <NavDropdown title="Events" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="/calendar">Calendar</NavDropdown.Item>
                                 <NavDropdown.Item href="/monthly">Monthly Calendar</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/pagination">Pagination</NavDropdown.Item>
+                                <NavDropdown.Item href="/upcoming-events">Upcoming Events</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="/contactus" >
                                 Contact Us

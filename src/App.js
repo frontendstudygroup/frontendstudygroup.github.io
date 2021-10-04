@@ -25,9 +25,9 @@ class App extends Component {
                             <Col>
                                 <Router>
                                     <Menubar></Menubar>
-                                    
-                                    <Route exact path="/home" component={Home}></Route>
-                                    
+                                    <br></br>
+                                             <Route exact path="/home" component={Home}></Route>
+
                                 </Router>
                             </Col>
                         </Row>

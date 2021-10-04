@@ -1,0 +1,18 @@
+
+
+.card-group {
+    flex: 1 0;
+    margin-bottom: 180pt;
+    padding: 140px 0px 50px 0px;
+    width: 98%; 
+    border: 0px; 
+    
+}
+.card-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.card-text{
+    text-align: center;
+    font-size: 21px;
+}
