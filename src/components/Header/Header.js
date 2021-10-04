@@ -22,24 +22,24 @@ const Header = () => {
             </div>
             <div className="navContainer" >
                 <ul className={click ? "navOptions active" : "navOptions"}>
-                    <Link to="#" className="option mobileOption" onClick={closeMobileMenu}>
+                    <Link to="/about" className="option mobileOption" onClick={closeMobileMenu}>
                             About
                     </Link>
                     <Link to="/resources" className="option mobileOption" onClick={closeMobileMenu}>
                             Resources
                     </Link>
-                    <Link to="#" className="option mobileOption" onClick={closeMobileMenu}>
+                    <Link to="/contact" className="option mobileOption" onClick={closeMobileMenu}>
                             Contact Us
                     </Link>
                 </ul>
                 <ul className="navDisplay">
-                    <Link to="#" className="optionDisplay" onClick={closeMobileMenu}>
+                    <Link to="/about" className="optionDisplay" onClick={closeMobileMenu}>
                             About
                     </Link>
                     <Link to="/resources" className="optionDisplay" onClick={closeMobileMenu}>
                             Resources
                     </Link>
-                    <Link to="#" className="optionDisplay" onClick={closeMobileMenu}>
+                    <Link to="/contact" className="optionDisplay" onClick={closeMobileMenu}>
                             Contact Us
                     </Link>
                 </ul>
