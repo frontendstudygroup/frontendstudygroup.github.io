@@ -1,5 +1,7 @@
 # Women Who Code Front End Study Group Project
 
+[![Build & Deploy React App](https://github.com/frontendstudygroup/frontendstudygroup.github.io/actions/workflows/ci-build.yml/badge.svg)](https://github.com/frontendstudygroup/frontendstudygroup.github.io/actions/workflows/ci-build.yml)
+
 This repository is a beginner-friendly project started by [Women Who Code Front End](https://www.womenwhocode.com/frontend) to learn about front end technologies as well as how to collaborate on an open source project.
 
 Currently it is deployed at [https://frontendstudygroup.github.io](https://frontendstudygroup.github.io) using [GitHub Pages](https://pages.github.com/). 
@@ -20,11 +22,14 @@ Participation and maintenance of this project is completely voluntary and we are
 - Search in [Issues](https://github.com/frontendstudygroup/frontendstudygroup.github.io/issues) for open issues to work on
     - If you would like to make a suggestion for an enhancement, or report a defect, create an issue
 - Fork the repository (recommended if you are doing this for the first time)
-- Clone your forked repository to your pc ( git clone "url from clone option.)
-- Assign the issue to yourself
+- Clone your forked repository to your machine (`git clone [url from clone option]`)
+- Request to assign the issue for yourself
 - Comment on the issue about your approach to solving the problem
 - Get feedback from other contributors or project maintainers
 - Submit a pull request when you are ready
+    - Add a title and small description in the pull request about what you did.
+    - Make sure to reference the issue number in the pull request comment with the words _"Fixes #[issue number]"_ or _"Resolves #[issue number]"_ as explained in [GitHub documentation](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+      
 
 Questions about front end? [Join the WWC Front End Slack](https://join.slack.com/t/womenwhocodefrontend/shared_invite/zt-gaic5y90-pDJK4H_NbObZ_MU_rcYc0A) and join the `#fe-beginner-studygroup` channel.
 
@@ -50,13 +55,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Deployment
 
-Executing the command `npm run build` builds the app for production to the `build` folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+There is a GitHub action set up on this repository to build the React app, run tests and deploy to the GitHub Pages site on every merge to the `master` branch.
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) in the Create React App documentation for more information.
+Also when a pull request is created or updated, the GitHub action will build the React app and run tests. If the build or tests fail, the pull request will be blocked from merging until they are resolved.
 
 ### Learn More
 
