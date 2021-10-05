@@ -1,7 +1,7 @@
-body {
+/* body {
   background: #59abe3;
   margin: 0;
-}
+} */
 .form {
   width: 340px;
   height: 440px;
@@ -12,17 +12,19 @@ body {
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   /*   position: relative; */
 }
-.FormHeading {
+.formHeading {
   margin: 10px 0;
   padding-bottom: 10px;
   width: 180px;
   color: #78788c;
   border-bottom: 3px solid #78788c;
 }
-.InputContent {
+.inputContent {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -30,14 +32,16 @@ body {
   outline: none;
   resize: none;
   border: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   transition: all 0.3s;
   border-bottom: 2px solid #bebed2;
 }
-.InputContent:focus {
+.inputContent:focus {
   border-bottom: 2px solid #78788c;
 }
-.FormContent:before {
+.formContent:before {
   text-align: left;
   content: attr(type);
   display: block;
@@ -45,11 +49,13 @@ body {
   font-size: 14px;
   color: #5a5a5a;
 }
-.SendMessageButton {
-  float: right;
+.sendMessageButton {
+  text-align: right;
   padding: 8px 12px;
   margin: 8px 0 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   border: 2px solid #78788c;
   background: 0;
   color: #5a5a6e;
@@ -57,24 +63,25 @@ body {
   transition: all 0.3s;
   margin-bottom: 15%;
 }
-.SendMessageButton:hover {
+.sendMessageButton:hover {
   background: #78788c;
   color: #fff;
 }
 
-.ContactInfo {
+.contactInfo {
   background-color: #50505a;
   padding: 10px;
   height: auto;
   font-size: 14px;
-  width: 25rem;
+  width: 280px;
   max-width: 100%;
   display: flex;
   border-radius: 5px;
   color: white;
-  margin-left: 2rem;
+  margin-left: 35px;
 }
 
-.PhoneAndEmail {
+.email {
+  padding-left: 23px;
   margin: 0 5px 0 15px;
 }
