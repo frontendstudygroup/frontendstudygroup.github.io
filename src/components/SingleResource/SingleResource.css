@@ -1,0 +1,13 @@
+.fullCardContainer {
+  height: calc(100vh - 62px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullCard {
+  max-width: 600px;
+  height: 400px;
+  padding: 20px 30px;
+  border: 2px solid rgb(0, 122, 124);
+}
