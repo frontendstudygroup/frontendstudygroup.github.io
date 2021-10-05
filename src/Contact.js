@@ -1,5 +1,5 @@
 import React from "react";
-
+document.body.style = 'background: #59abe3;';
 export default function Contact() {
   return (
     <div> 
@@ -10,9 +10,9 @@ export default function Contact() {
           CONTACT US
         </h2>
 
-        <label className="formContent" type="Name:">
+        <p className="formContent" type="Name:">
           <input className="inputContent" placeholder="Your Name"></input>
-        </label>
+        </p>
 
         <p className="formContent" type="Email:">
           <input
