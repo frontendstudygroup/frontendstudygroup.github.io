@@ -1,5 +1,7 @@
 # Women Who Code Front End Study Group Project
 
+[![Build & Deploy React App](https://github.com/frontendstudygroup/frontendstudygroup.github.io/actions/workflows/ci-build.yml/badge.svg)](https://github.com/frontendstudygroup/frontendstudygroup.github.io/actions/workflows/ci-build.yml)
+
 This repository is a beginner-friendly project started by [Women Who Code Front End](https://www.womenwhocode.com/frontend) to learn about front end technologies as well as how to collaborate on an open source project.
 
 Currently it is deployed at [https://frontendstudygroup.github.io](https://frontendstudygroup.github.io) using [GitHub Pages](https://pages.github.com/). 
@@ -8,7 +10,14 @@ We are collaborating with [Women Who Code Cloud](https://www.womenwhocode.com/cl
 
 ## Expectations
 
-Participation and maintenance of this project is completely voluntary and we are not committing to teach anything as part of this effort. If you want to practice together with us, this is a good place!
+- Participation and maintenance of this project is completely voluntary and we are not committing to teach anything as part of this effort. If you want to practice together with us, this is a good place!
+- We highly encourage you _not_ to use third party UI frameworks. For example, if you want to design a carousel or a tooltip, do it from scratch.
+    > However we do understand that sometimes we need to use some third party libraries like redux or react-dom-router. When in doubt discuss it on the issue you are working on.
+- Find your motivation to contribute to this repository and make sure you have the time.
+    > Life happens, we get it. Just let us know if you cannot do something you're assigned to and do NOT feel guilty about it.
+- Things work best for all of us when contribution goals are driven by you. We as maintainers will only guide you and validate your thought process.
+- Be open and honest in your communication.
+- Be selfish! Aim to do what you intend to learn and do not feel forced to work on something against your will.
 
 ## Code of Conduct
 
@@ -20,11 +29,14 @@ Participation and maintenance of this project is completely voluntary and we are
 - Search in [Issues](https://github.com/frontendstudygroup/frontendstudygroup.github.io/issues) for open issues to work on
     - If you would like to make a suggestion for an enhancement, or report a defect, create an issue
 - Fork the repository (recommended if you are doing this for the first time)
-- Clone your forked repository to your pc ( git clone "url from clone option.)
-- Assign the issue to yourself
+- Clone your forked repository to your machine (`git clone [url from clone option]`)
+- Request to assign the issue for yourself
 - Comment on the issue about your approach to solving the problem
 - Get feedback from other contributors or project maintainers
 - Submit a pull request when you are ready
+    - Add a title and small description in the pull request about what you did.
+    - Make sure to reference the issue number in the pull request comment with the words _"Fixes #[issue number]"_ or _"Resolves #[issue number]"_ as explained in [GitHub documentation](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+      
 
 Questions about front end? [Join the WWC Front End Slack](https://join.slack.com/t/womenwhocodefrontend/shared_invite/zt-gaic5y90-pDJK4H_NbObZ_MU_rcYc0A) and join the `#fe-beginner-studygroup` channel.
 
@@ -50,13 +62,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Deployment
 
-Executing the command `npm run build` builds the app for production to the `build` folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+There is a GitHub action set up on this repository to build the React app, run tests and deploy to the GitHub Pages site on every merge to the `master` branch.
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) in the Create React App documentation for more information.
+Also when a pull request is created or updated, the GitHub action will build the React app and run tests. If the build or tests fail, the pull request will be blocked from merging until they are resolved.
 
 ### Learn More
 
