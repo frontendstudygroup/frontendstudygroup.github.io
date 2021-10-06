@@ -1,5 +1,7 @@
 import React from "react";
 import './Contact.css'
+
+
 export default function Contact() {
   return (
     <div> 
@@ -10,32 +12,23 @@ export default function Contact() {
           CONTACT US
         </h2>
 
-        <p className="formContent" type="Name:">
-          <input className="inputContent" placeholder="Your Name"></input>
-        </p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" className="inputContent" placeholder="Your Name" />
 
-        <p className="formContent" type="Email:">
-          <input
-            className="inputContent"
-            placeholder="Let us know how to contact you back.."
-          ></input>
-        </p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" className="inputContent" placeholder="Let us know how to contact you back.." />
 
-        <p className="formContent" type="Message:">
-          <input
-            className="inputContent"
-            placeholder="What would you like to tell us.."
-          ></input>
-        </p>
+        <label for="message">Message:</label>
+        <input type="text" id="message" className="inputContent" placeholder="What would you like to tell us.." />
 
         <button className="sendMessageButton" >
           Send Message
         </button>
 
-        <div className="contactInfo">
+        {/* <div className="contactInfo">
           <span className="email" ></span>
           frontend@womenwhocode.com
-        </div>
+        </div> */}
       </form>
     </div>
   );
