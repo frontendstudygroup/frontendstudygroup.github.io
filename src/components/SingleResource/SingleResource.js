@@ -6,6 +6,7 @@ import data from '../data/data.json';
 
 export default function SingleResource() {
   const { id } = useParams();
+
   return (
     <>
       <div className="fullCardContainer">
@@ -13,9 +14,16 @@ export default function SingleResource() {
               .filter((resource) => resource.id === Number(id))
               .map((resource) => (
                 <div className="fullCard" key={ resource.id }>
-                  <h2>Name: {resource.name}</h2>
-                  <h4>Duration: {resource.internship_period} months</h4>
-                  <p>Application period: {resource.internship_period}</p>
+                  <h2 className="fullCardTitle">{resource.name}</h2>
+                  <path>Duration: <strong>{resource.internship_period} months</strong></path>
+                  {resource.application_period.length > 0 &&
+                    <div><p>Application period:</p>
+                      <div className="fullCardLabelsContainer">{ resource.application_period.map((month) => <span key={month.id} className="fullCardLabel">{ month.name }</span>) }</div>
+                      </div>
+                  }
+                  <p>Stipend: {resource.stipend ? <strong>Paid</strong> : <strong>Unpaid</strong>}</p>
+                  <p>Location: { resource.location.join(', ')}</p>
+                  <a class="fullCardLink" target="_blank" href={resource.url} rel="noreferrer">Go to resource website</a>
                 </div>
               ))}
       </div>     

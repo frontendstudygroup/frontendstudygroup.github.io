@@ -12,7 +12,7 @@ export default function Resources() {
             ResourcesList.map(resource => 
               <article key={resource.id}> 
                 <div className="text">{resource.name}
-                <Link to={`/resources/${resource.id}`}>Find out more</Link>
+                <Link className="resourceLink" to={`/resources/${resource.id}`}><span>More info</span></Link>
                </div>
               </article>)}
       </div>     

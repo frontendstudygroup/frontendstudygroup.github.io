@@ -6,8 +6,47 @@
 }
 
 .fullCard {
-  max-width: 600px;
-  height: 400px;
+  width: 400px;
   padding: 20px 30px;
-  border: 2px solid rgb(0, 122, 124);
+  border: 1px solid rgb(0, 122, 124);
+  box-shadow: 4px 5px 10px 0px rgb(0 122 124 / 30%);
+  position: relative;
+}
+
+.fullCardTitle {
+  color: rgb(0, 122, 124);
+  font-weight: 600;
+}
+
+.fullCardLabelsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+}
+
+.fullCardLabel {
+  color: #fff;
+  background-color: rgb(0, 122, 124);
+  margin: 5px;
+  padding: 6px 8px;
+}
+
+.fullCardLink {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-decoration: underline;
+  color: rgb(0, 122, 124);
+}
+
+.fullCardLink:hover {
+  color: rgba(0, 122, 124, 0.5);
+}
+
+@media (max-width: 875px) {
+  .fullCard {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
