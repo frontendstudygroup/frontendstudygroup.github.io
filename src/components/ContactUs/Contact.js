@@ -1,7 +1,5 @@
 import React from "react";
 import './Contact.css'
-document.body.style = 'background: #59abe3;';
-
 export default function Contact() {
   return (
     <div> 
