@@ -1,34 +1,81 @@
-import React from "react";
-import './Contact.css'
+import React, { useState } from "react";
+import { useHistory } from "react-router";
+import './Contact.css';
 
+const isEmailValid = ( email ) => /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/.test(email);
 
 export default function Contact() {
+
+  const history = useHistory();
+  const [ formData, setFormData ] = useState({ 
+    name: "",
+    email: "", 
+    message: "",
+    nameError: false,
+    emailError: false,
+    messageError: false,
+    formSubmitted: false
+  });
+
+  const demoFormSubmit = (e) => {
+    e.preventDefault();
+    if(formData.name === "" ) return setFormData({ ...formData, nameError: true });
+    if(!isEmailValid(formData.email)) return setFormData({ ...formData, emailError: true });
+    if(formData.message === "" ) return setFormData({ ...formData, messageError: true });
+    setFormData({...formData, formSubmitted: true });
+    setTimeout(() => {
+      history.push("/");
+    }, 1500);
+  }
+
   return (
     <div> 
 
-      <form className="form" >
+      <form className="form" onSubmit={demoFormSubmit}>
 
         <h2 className="formHeading">
           CONTACT US
         </h2>
 
         <label for="name">Name:</label>
-        <input type="text" id="name" className="inputContent" placeholder="Your Name" />
+       <input type="text" id="name" placeholder="Your Name" 
+        value={formData.name} 
+        onChange={ e => setFormData({ ...formData, name: e.target.value })} />
+       <p className={formData.nameError ? "formContentError" : ""} type={formData.nameError ? "This field is required" : ""} ></p>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" className="inputContent" placeholder="Let us know how to contact you back.." />
 
-        <label for="message">Message:</label>
-        <input type="text" id="message" className="inputContent" placeholder="What would you like to tell us.." />
+       <label for="email">Email:</label>
+       <input type="email" id="email"  placeholder="Let us know how to contact you back.." 
+        value={formData.email} 
+        onChange={ e => setFormData({ ...formData, email: e.target.value })}
+        />
+       <p className={formData.emailError ? "formContentError" : ""} type={formData.emailError ? "Please enter a valid email" : ""}>
+         </p>
 
-        <button className="sendMessageButton" >
-          Send Message
-        </button>
+      <label for="message">Message:</label>
+      <input type="text" id="message" placeholder="What would you like to tell us.." value={formData.message} 
+       onChange={ e => setFormData({ ...formData, message: e.target.value })}
+        />
+      <p className={formData.messageError ? "formContentError" : ""} type={formData.messageError ? "This field is required)" : ""}></p>
 
-        {/* <div className="contactInfo">
-          <span className="email" ></span>
-          frontend@womenwhocode.com
-        </div> */}
+        {
+          !formData.formSubmitted
+          ?
+            <button className="sendMessageButton" type="submit" >
+              Send Message
+            </button>
+          :
+          <div className="formSuccessMessage">
+            Thanks for contacting us! <br /> We will try to revert back as soon as possible!
+          </div>
+        }
+
+        {/* <a href="mailto:frontend@womenwhocode.com" className="contactInfo">
+          <div>
+            <span className="email" ></span>
+            frontend@womenwhocode.com
+          </div>
+        </a> */}
       </form>
     </div>
   );

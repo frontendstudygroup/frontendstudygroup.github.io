@@ -67,6 +67,16 @@ input[type="email"]:focus {
   transition: all 0.3s;
 }
 
+.formContentError:before{
+  text-align: left;
+  content: attr(type);
+  display: block;
+  margin: -4px 0;
+  font-style: italic;
+  font-size: 14px;
+  color: rgb(216, 14, 14);
+}
+
 .sendMessageButton:hover {
   background: rgb(0, 122, 124);
   color: #fff;
