@@ -11,7 +11,7 @@ const Main = () => {
             </p>
             <a
                 className="App-link"
-                href="http://womenwhocode.com/"
+            href="http://womenwhocode.com/"
                 target="_blank"
                 rel="noopener noreferrer"
             >

@@ -1,0 +1,103 @@
+.footer{
+    position: relative;
+    height: 315px;
+    background: #131212;
+}
+.facebook{
+position: absolute;
+left: 8.47%;
+right: 88.75%;
+top: 22.49%;
+bottom: 66.67%;
+color: #A3A9A4;
+font-size: 2em;
+}
+
+.instagram{
+position: absolute;
+left: 16.74%;
+right: 80.49%;
+top: 22.49%;
+bottom: 66.67%;
+color: #A3A9A4;
+font-size: 2em;
+}
+
+.twitter{
+position: absolute;
+left: 25%;
+right: 72.22%;
+top: 22.49%;
+bottom: 66.67%;
+color: #A3A9A4;
+font-size: 2em;
+}
+
+.email{
+position: absolute;
+left: 33.26%;
+right: 63.96%;
+top: 22.49%;
+bottom: 66.67%;
+color: #A3A9A4;
+font-size: 2em;
+}
+
+.frontEnd-logo{
+position: absolute;
+left: 44.38%;
+right: 44.38%;
+top: 5.96%;
+bottom: 50.14%;
+Width:162px;
+Height:162px;
+}
+
+.register{
+position: absolute;
+left: 63.68%;
+right: 3.47%;
+top: 16.25%;
+bottom: 71%;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 33px;
+/* identical to box height */
+
+
+color: #A3A9A4;
+}
+.register-link{
+position: absolute;
+left: 63.68%;
+right: 5.69%;
+top: 33.33%;
+bottom: 58.54%;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+color: #71B6F6;
+}
+
+.copyright{
+position: absolute;
+left: 32.5%;
+right: 32.57%;
+top: 86.99%;
+bottom: 5.69%;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+color: #A3A9A4;
+}
+
+.copyright-link{
+ color: #71B6F6;
+}
