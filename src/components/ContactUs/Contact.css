@@ -86,29 +86,6 @@ input[type="email"]:focus {
   padding: 8px 0px;
 }
 
-/* .contactInfo {
-  background-color: #50505a;
-  padding: 10px;
-  height: auto;
-  font-size: 14px;
-  width: 280px;
-  max-width: 100%;
-  display: flex;
-  border-radius: 5px;
-  color: white;
-  margin-left: 60px;
-}
-
-@media (max-width: 600px){
-  .contactInfo{
-    margin-left: 0px;
-  }
-}
-
-.email {
-  padding-left: 10px;
-  margin: 0 5px 0 15px;
-} */
 
 @media (max-width: 875px) {
   /*Mobile View */

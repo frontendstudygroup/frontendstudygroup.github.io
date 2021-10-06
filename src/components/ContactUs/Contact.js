@@ -69,13 +69,6 @@ export default function Contact() {
             Thanks for contacting us! <br /> We will try to revert back as soon as possible!
           </div>
         }
-
-        {/* <a href="mailto:frontend@womenwhocode.com" className="contactInfo">
-          <div>
-            <span className="email" ></span>
-            frontend@womenwhocode.com
-          </div>
-        </a> */}
       </form>
     </div>
   );
