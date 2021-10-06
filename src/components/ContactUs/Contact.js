@@ -37,32 +37,26 @@ export default function Contact() {
           CONTACT US
         </h2>
 
-        <p className={formData.nameError ? "formContentError" : "formContent"} type={formData.nameError ? "Name: (This field is required)" : "Name:"} >
-          <input 
-            className="inputContent" 
-            placeholder="Your Name"
-            value={formData.name} 
-            onChange={ e => setFormData({ ...formData, name: e.target.value })} 
-          ></input>
-        </p>
+        <label for="name">Name:</label>
+       <input type="text" id="name" placeholder="Your Name" 
+        value={formData.name} 
+        onChange={ e => setFormData({ ...formData, name: e.target.value })} />
+       <p className={formData.nameError ? "formContentError" : ""} type={formData.nameError ? "This field is required" : ""} ></p>
 
-        <p className={formData.emailError ? "formContentError" : "formContent"} type={formData.emailError ? "Email: (Please enter a valid email)" : "Email:"}>
-          <input
-            className="inputContent"
-            placeholder="Let us know how to contact you back.."
-            value={formData.email} 
-            onChange={ e => setFormData({ ...formData, email: e.target.value })}
-          ></input>
-        </p>
 
-        <p className={formData.messageError ? "formContentError" : "formContent"} type={formData.messageError ? "Message: (This field is required)" : "Message:"}>
-          <input
-            className="inputContent"
-            placeholder="What would you like to tell us.."
-            value={formData.message} 
-            onChange={ e => setFormData({ ...formData, message: e.target.value })}
-          ></input>
-        </p>
+       <label for="email">Email:</label>
+       <input type="email" id="email"  placeholder="Let us know how to contact you back.." 
+        value={formData.email} 
+        onChange={ e => setFormData({ ...formData, email: e.target.value })}
+        />
+       <p className={formData.emailError ? "formContentError" : ""} type={formData.emailError ? "Please enter a valid email" : ""}>
+         </p>
+
+      <label for="message">Message:</label>
+      <input type="text" id="message" placeholder="What would you like to tell us.." value={formData.message} 
+       onChange={ e => setFormData({ ...formData, message: e.target.value })}
+        />
+      <p className={formData.messageError ? "formContentError" : ""} type={formData.messageError ? "This field is required)" : ""}></p>
 
         {
           !formData.formSubmitted
@@ -75,13 +69,6 @@ export default function Contact() {
             Thanks for contacting us! <br /> We will try to revert back as soon as possible!
           </div>
         }
-
-        <a href="mailto:frontend@womenwhocode.com" className="contactInfo">
-          <div>
-            <span className="email" ></span>
-            frontend@womenwhocode.com
-          </div>
-        </a>
       </form>
     </div>
   );

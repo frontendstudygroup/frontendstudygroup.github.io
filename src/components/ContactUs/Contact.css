@@ -1,64 +1,84 @@
 .form {
-  width: 340px;
-  height: 440px;
-  background: #e6e6e6;
+  width: 536px;
+  height: max-content;
   border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
-  margin: calc(50vh - 220px) auto;
+  box-shadow: 0px 10px 20px #00000012;
+  margin: 40px auto;
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
-  box-sizing: border-box;
 }
+
 .formHeading {
-  margin: 10px 0;
-  padding-bottom: 10px;
-  width: 180px;
-  color: #78788c;
-  border-bottom: 3px solid #78788c;
+  margin: 19px 0 45px;
+  padding-bottom: 15px;
+  color: #19191a;
+  width: 60%;
+  font-size: 39px;
+  letter-spacing: 2px;
+  border-bottom: 3px solid rgb(0, 122, 124);
 }
-.inputContent {
+
+label {
+  text-align: left;
+  content: attr(type);
+  display: block;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  padding-bottom: 6px;
+  color: #19191a;
+}
+
+input[type="text"],
+input[type="email"] {
   width: 100%;
-  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 20px 0px 20px 7px;
   box-sizing: border-box;
-  background: none;
   outline: none;
   resize: none;
   border: 0;
   transition: all 0.3s;
-  border-bottom: 2px solid #bebed2;
+  border-bottom: 3px solid #19191a;
 }
-.inputContent:focus {
-  border-bottom: 2px solid #78788c;
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  font-size: 15px;
 }
-.formContent:before {
-  text-align: left;
-  content: attr(type);
-  display: block;
-  margin: 28px 0 0;
-  font-size: 14px;
-  color: #5a5a5a;
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-bottom: 3px solid #78788c;
 }
+
+.sendMessageButton {
+  color: rgb(0, 122, 124);
+  font-size: 20px;
+  letter-spacing: 2px;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  padding: 23px 12px;
+  margin: 32px 0 26px;
+  border: 1px solid rgb(0, 122, 124);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 .formContentError:before{
   text-align: left;
   content: attr(type);
   display: block;
-  margin: 28px 0 0;
+  margin: -4px 0;
+  font-style: italic;
   font-size: 14px;
   color: rgb(216, 14, 14);
 }
-.sendMessageButton {
-  text-align: left;
-  padding: 8px 12px;
-  margin: 8px 0 0;
-  border: 2px solid #78788c;
-  background: 0;
-  color: #5a5a6e;
-  cursor: pointer;
-  transition: all 0.3s;
-  margin-bottom: 15%;
-}
+
 .sendMessageButton:hover {
-  background: #78788c;
+  background: rgb(0, 122, 124);
   color: #fff;
 }
 .formSuccessMessage{
@@ -66,26 +86,14 @@
   padding: 8px 0px;
 }
 
-.contactInfo {
-  background-color: #50505a;
-  padding: 10px;
-  height: auto;
-  font-size: 14px;
-  width: 280px;
-  max-width: 100%;
-  display: flex;
-  border-radius: 5px;
-  color: white;
-  margin-left: 60px;
-}
 
-@media (max-width: 600px){
-  .contactInfo{
-    margin-left: 0px;
+@media (max-width: 875px) {
+  /*Mobile View */
+  .form {
+    padding: 30px 18px;
   }
-}
 
-.email {
-  padding-left: 10px;
-  margin: 0 5px 0 15px;
+  .formHeading {
+    width: 100%;
+  }
 }
