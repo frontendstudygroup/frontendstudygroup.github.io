@@ -101,3 +101,63 @@ color: #A3A9A4;
 .copyright-link{
  color: #71B6F6;
 }
+
+@media (max-width: 875px){
+.frontEnd-logo{
+left: 5.29%;
+right: 64.84%;
+top: 2.63%;
+bottom: 59.69%;
+Width:150px;
+Height:150px;
+}
+
+.register{
+left: 5.29%;
+right: 5.27%;
+top: 42.31%;
+font-size: 18px;
+line-height: 33px;
+/* bottom: 52.42%; */
+}
+
+.register-link{
+left: 5.29%;
+right: 18.57%;
+top: 58.58%;
+font-size: 16px;
+line-height: 30px;
+/* bottom: 45.81%;  */
+}
+.copyright{
+left: 5.29%;
+right: 8.29%;
+top: 80.43%;
+bottom: 4.63%;
+font-size: 14px;
+line-height: 20px;
+padding: 2px;
+}
+.facebook{
+left: 5.47%;
+right: 88.75%;
+top: 72.49%;
+bottom: 66.67%;
+}
+.instagram{
+left: 13.74%;
+right: 80.49%;
+top: 72.49%;
+}
+.twitter{
+left: 22%;
+right: 72.22%;
+top: 72.49%;
+
+}
+
+.email{
+top: 72.49%;
+left: 30.26%;
+}
+}
