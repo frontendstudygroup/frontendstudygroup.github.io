@@ -5,10 +5,7 @@
     "url": "https://summerofcode.withgoogle.com/",
     "eligibility_criteria": "none",
     "internship_period": 3,
-    "application_period": [
-      { "id": 1, "name": "March" },
-      { "id": 2, "name": "April" }
-    ],
+    "application_period": ["March", "April"],
     "stipend": true,
     "location": ["Remote"]
   },
@@ -18,10 +15,7 @@
     "url": "https://www.fsf.org/volunteer/internships",
     "eligibility_criteria": "none",
     "internship_period": 3,
-    "application_period": [
-      { "id": 1, "name": "April" },
-      { "id": 2, "name": "May" }
-    ],
+    "application_period": ["April", "May"],
     "stipend": false,
     "location": ["Remote", "Boston, US"]
   },
@@ -32,18 +26,18 @@
     "eligibility_criteria": "none",
     "internship_period": 4,
     "application_period": [
-      { "id": 1, "name": "January" },
-      { "id": 2, "name": "February" },
-      { "id": 3, "name": "March" },
-      { "id": 4, "name": "April" },
-      { "id": 5, "name": "May" },
-      { "id": 6, "name": "June" },
-      { "id": 7, "name": "July" },
-      { "id": 8, "name": "August" },
-      { "id": 9, "name": "September" },
-      { "id": 10, "name": "October" },
-      { "id": 11, "name": "November" },
-      { "id": 12, "name": "December" }
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
     ],
     "stipend": true,
     "location": ["Remote"]
@@ -54,11 +48,7 @@
     "url": "https://railsgirlssummerofcode.org/blog/2017-07-12-namaste-rgsoc-2017",
     "eligibility_criteria": "For Girls only",
     "internship_period": 3,
-    "application_period": [
-      { "id": 1, "name": "February" },
-      { "id": 2, "name": "March" },
-      { "id": 3, "name": "April" }
-    ],
+    "application_period": ["February", "March", "April"],
     "stipend": true,
     "location": ["Remote"]
   },
@@ -68,10 +58,7 @@
     "url": "https://old.dataone.org/internships",
     "eligibility_criteria": "none",
     "internship_period": 4,
-    "application_period": [
-      { "id": 1, "name": "February" },
-      { "id": 2, "name": "March" }
-    ],
+    "application_period": ["February", "March"],
     "stipend": true,
     "location": ["United States"]
   },
@@ -81,11 +68,7 @@
     "url": "http://archive15.opendaylight.org/community/summer-intern-program",
     "eligibility_criteria": "none",
     "internship_period": 3,
-    "application_period": [
-      { "id": 1, "name": "January" },
-      { "id": 2, "name": "February" },
-      { "id": 3, "name": "March" }
-    ],
+    "application_period": ["January", "February", "March"],
     "stipend": true,
     "location": ["Remote"]
   },
@@ -96,18 +79,18 @@
     "eligibility_criteria": "none",
     "internship_period": 3,
     "application_period": [
-      { "id": 1, "name": "January" },
-      { "id": 2, "name": "February" },
-      { "id": 3, "name": "March" },
-      { "id": 4, "name": "April" },
-      { "id": 5, "name": "May" },
-      { "id": 6, "name": "June" },
-      { "id": 7, "name": "July" },
-      { "id": 8, "name": "August" },
-      { "id": 9, "name": "September" },
-      { "id": 10, "name": "October" },
-      { "id": 11, "name": "November" },
-      { "id": 12, "name": "December" }
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
     ],
     "stipend": false,
     "location": ["Bangalore", "Remote"]
@@ -119,18 +102,18 @@
     "eligibility_criteria": "none",
     "internship_period": 3,
     "application_period": [
-      { "id": 1, "name": "January" },
-      { "id": 2, "name": "February" },
-      { "id": 3, "name": "March" },
-      { "id": 4, "name": "April" },
-      { "id": 5, "name": "May" },
-      { "id": 6, "name": "June" },
-      { "id": 7, "name": "July" },
-      { "id": 8, "name": "August" },
-      { "id": 9, "name": "September" },
-      { "id": 10, "name": "October" },
-      { "id": 11, "name": "November" },
-      { "id": 12, "name": "December" }
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
     ],
     "stipend": true,
     "location": ["Remote"]
@@ -141,11 +124,7 @@
     "url": "https://www.gnome.org/outreachy/",
     "eligibility_criteria": "Women, trans and cisgendered women",
     "internship_period": 3,
-    "application_period": [
-      { "id": 1, "name": "February" },
-      { "id": 2, "name": "March" },
-      { "id": 3, "name": "April" }
-    ],
+    "application_period": ["February", "March", "April"],
     "stipend": true,
     "location": ["Remote"]
   },
@@ -155,10 +134,7 @@
     "url": "https://developers.google.com/season-of-docs",
     "eligibility_criteria": "Women, trans and cisgendered women",
     "internship_period": 3,
-    "application_period": [
-      { "id": 1, "name": "June" },
-      { "id": 2, "name": "July" }
-    ],
+    "application_period": ["June", "July"],
     "stipend": false,
     "location": ["Remote"]
   },

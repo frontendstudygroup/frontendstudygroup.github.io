@@ -15,15 +15,15 @@ export default function SingleResource() {
               .map((resource) => (
                 <div className="fullCard" key={ resource.id }>
                   <h2 className="fullCardTitle">{resource.name}</h2>
-                  <path>Duration: <strong>{resource.internship_period} months</strong></path>
+                  <p>Duration: <strong>{resource.internship_period} months</strong></p>
                   {resource.application_period.length > 0 &&
                     <div><p>Application period:</p>
-                      <div className="fullCardLabelsContainer">{ resource.application_period.map((month) => <span key={month.id} className="fullCardLabel">{ month.name }</span>) }</div>
+                      <div className="fullCardLabelsContainer">{ resource.application_period.map((month, index) => <span key={index} className="fullCardLabel">{ month }</span>) }</div>
                       </div>
                   }
                   <p>Stipend: {resource.stipend ? <strong>Paid</strong> : <strong>Unpaid</strong>}</p>
                   <p>Location: { resource.location.join(', ')}</p>
-                  <a class="fullCardLink" target="_blank" href={resource.url} rel="noreferrer">Go to resource website</a>
+                  <a className="fullCardLink" target="_blank" href={resource.url} rel="noreferrer">Go to resource website</a>
                 </div>
               ))}
       </div>     

@@ -10,7 +10,9 @@
   padding: 20px 30px;
   border: 1px solid rgb(0, 122, 124);
   box-shadow: 4px 5px 10px 0px rgb(0 122 124 / 30%);
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .fullCardTitle {
@@ -32,11 +34,11 @@
 }
 
 .fullCardLink {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
   text-decoration: underline;
   color: rgb(0, 122, 124);
+  width: 100%;
+  text-align: right;
+  margin-top: 20px;
 }
 
 .fullCardLink:hover {
