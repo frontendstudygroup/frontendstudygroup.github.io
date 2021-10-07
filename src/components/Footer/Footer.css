@@ -2,12 +2,18 @@
     position: relative;
     height: 305px;
     background: #131212;
+   }
+.footer-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+   
 }
 .frontEnd-logo{
     width: 15vw;
     height: 25vh;
-    margin-left: 38%;
-    padding-top: 20px;
+    
 }
 .icons > a{
     color: #A3A9A4;
@@ -20,14 +26,9 @@
 }
 .icons{
     display: flex;
-    margin-left: 8%;
-    margin-top: -9%;
-    
+      
 }
-.info{
-    margin-left: 62%;
-    margin-top: -6%;
-}
+
 .info > p{
     color: #A3A9A4;
     font-size: 18px;
@@ -36,12 +37,10 @@
 color:#71b6f6;
 }
 
-.copyright{
-    margin-left: 30%;
-    margin-top: 12%;
-}
 .copyright > p{
     color: #A3A9A4;
+    padding-top: 50px;
+    text-align: center;
 }
 .copyright > p >a{
     color:#71b6f6;
@@ -49,27 +48,18 @@ color:#71b6f6;
 
 @media (max-width: 875px){
 .frontEnd-logo{
-    width: 29vw;
-    height: 20vh;
-    margin-left: 35%;
-    }
-.icons{
-    margin-top: -5%;
-  }
-.info{
-margin-left: 5%;
-margin-top: 5%;
+width: 29vw;
+height: 15vh;
+padding:10px;
 }
-.info > p{
-font-size: 14px;
+.footer-items{
+flex-direction: column-reverse;
+align-content: space-around;
+   
 }
-.info > a{
-font-size: 14px;
-}
-.copyright{
-margin-left: 7%;
-}
+
 .copyright > p{
 font-size: 10px;
+padding-top: 0px;
 }
 }

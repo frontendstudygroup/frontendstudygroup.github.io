@@ -6,9 +6,7 @@ import WWCodeFrontEnd from '../../assets/images/WWCode-Logo.png'
 export default function Footer(){
     return(
         <div className="footer">
-            <a href="/">
-                <img src={WWCodeFrontEnd} alt="Women Who Code Front-End Logo" className="frontEnd-logo" />
-            </a>
+            <div className="footer-items">
             <div className="icons">
             <a 
             target="_blank" 
@@ -32,12 +30,19 @@ export default function Footer(){
                  <i class="fas fa-envelope"></i></a>
                  </div>
 
+                 <div>
+            <a href="/">
+                <img src={WWCodeFrontEnd} alt="Women Who Code Front-End Logo" className="frontEnd-logo" />
+            </a>
+            </div>
+
             
             <div className="info">
             <p>Register for events and join our community</p>
             <a href="https://www.womenwhocode.com/frontend"
              target="_blank"
              rel="noopener noreferrer">https://www.womenwhocode.com/frontend</a>
+             </div>
              </div>
 
             <div className="copyright">
