@@ -1,18 +1,36 @@
-.grid { 
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 182px;
   align-items: justify;
   padding: 30px 80px 30px 80px;
-  }
+}
 .grid > article {
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   width: 110%;
-  height: 260%;
+  height: 220%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .text {
   padding: 13px 41px 20px;
   text-align: center;
+  margin-top: 20px;
+}
+
+.resourceLink {
+  color: #fff;
+  background-color: rgb(0, 122, 124);
+  margin: 5px;
+  padding: 6px 16px;
+  width: 120px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.resourceLink:hover {
+  background-color: rgba(0, 122, 124, 0.8);
 }
