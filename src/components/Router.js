@@ -6,6 +6,7 @@ import Resources from "./Resources/Resources";
 import Footer from "./Footer/Footer";
 import SingleResource from "./SingleResource/SingleResource";
 import Contact from "./ContactUs/Contact";
+import About from "./About/About";
 
 const Router = () => (
   <BrowserRouter>
@@ -15,6 +16,7 @@ const Router = () => (
       <Route exact path="/resources" component={Resources} />
       <Route path="/resources/:id" component={SingleResource} />
       <Route exact path="/contact" component={Contact} />
+      <Route exact path="/about" component={About} />
     </Switch>
     <Footer/>
   </BrowserRouter>

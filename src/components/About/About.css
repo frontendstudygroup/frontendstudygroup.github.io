@@ -1,0 +1,18 @@
+.container {
+  padding: 37px 80px;
+}
+.description {
+  line-height: 1.8;
+}
+.title {
+  color: #007a7c;
+}
+.list li {
+  line-height: 1.8;
+}
+.join-us,
+.blog,
+.project {
+  color: #007a7c;
+  font-weight: bold;
+}
