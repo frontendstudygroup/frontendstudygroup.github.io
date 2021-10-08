@@ -9,10 +9,11 @@ export default function Toggle(){
     const history = useHistory();
     return (
         <>
-            <div>
-                 <button className= "toggle" onClick={() => history.push('/TableView')}><img alt ="table" src={table}></img></button>
-
-                 <button className= "toggle" onClick={() => history.push('/resources')}><img alt ="card" src={card}></img></button>
+            <div className="flex-container">
+                
+                    <button  onClick={() => history.push('/TableView')}><img alt ="table" src={table}></img></button>
+                    <button  onClick={() => history.push('/resources')}><img alt ="card" src={card}></img></button>
+                 
             </div>
         </>
 

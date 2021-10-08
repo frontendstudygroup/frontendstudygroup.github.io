@@ -1,9 +1,11 @@
-.toggle{
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    float: right;
-    padding: 10px;
-    background-color: white
-   
-  }
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-container > button{
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
