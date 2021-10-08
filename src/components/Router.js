@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import App from "../App";
 import Header from "./Header/Header";
 import Resources from "./Resources/Resources";
+import Footer from "./Footer/Footer";
 import SingleResource from "./SingleResource/SingleResource";
 import Contact from "./ContactUs/Contact";
 
@@ -15,6 +16,7 @@ const Router = () => (
       <Route path="/resources/:id" component={SingleResource} />
       <Route exact path="/contact" component={Contact} />
     </Switch>
+    <Footer/>
   </BrowserRouter>
 );
 
