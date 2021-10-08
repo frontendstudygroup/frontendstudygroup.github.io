@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5101069.chunk.css",
-    "main.js": "/static/js/main.42688db3.chunk.js",
-    "main.js.map": "/static/js/main.42688db3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.364cf2e7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.364cf2e7.js.map",
+    "main.css": "/static/css/main.bce2cb72.chunk.css",
+    "main.js": "/static/js/main.02f53e35.chunk.js",
+    "main.js.map": "/static/js/main.02f53e35.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.39cb829e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.39cb829e.js.map",
     "static/js/2.d2e043b2.chunk.js": "/static/js/2.d2e043b2.chunk.js",
     "static/js/2.d2e043b2.chunk.js.map": "/static/js/2.d2e043b2.chunk.js.map",
-    "static/js/3.23639028.chunk.js": "/static/js/3.23639028.chunk.js",
-    "static/js/3.23639028.chunk.js.map": "/static/js/3.23639028.chunk.js.map",
+    "static/js/3.1c9dad45.chunk.js": "/static/js/3.1c9dad45.chunk.js",
+    "static/js/3.1c9dad45.chunk.js.map": "/static/js/3.1c9dad45.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.f5101069.chunk.css.map": "/static/css/main.f5101069.chunk.css.map",
+    "static/css/main.bce2cb72.chunk.css.map": "/static/css/main.bce2cb72.chunk.css.map",
     "static/js/2.d2e043b2.chunk.js.LICENSE.txt": "/static/js/2.d2e043b2.chunk.js.LICENSE.txt",
     "static/media/CloseIcon.16ef9c93.svg": "/static/media/CloseIcon.16ef9c93.svg",
     "static/media/index.css": "/static/media/FontsFree-Net-BrittanySignature.0d8ad040.ttf",
@@ -20,9 +20,9 @@
     "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.364cf2e7.js",
+    "static/js/runtime-main.39cb829e.js",
     "static/js/2.d2e043b2.chunk.js",
-    "static/css/main.f5101069.chunk.css",
-    "static/js/main.42688db3.chunk.js"
+    "static/css/main.bce2cb72.chunk.css",
+    "static/js/main.02f53e35.chunk.js"
   ]
 }
