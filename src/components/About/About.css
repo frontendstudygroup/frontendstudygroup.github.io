@@ -10,9 +10,7 @@
 .list li {
   line-height: 1.8;
 }
-.join-us,
-.blog,
-.project {
+.link {
   color: #007a7c;
   font-weight: bold;
 }

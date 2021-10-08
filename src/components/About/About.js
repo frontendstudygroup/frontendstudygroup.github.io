@@ -17,13 +17,13 @@ const About = () => {
       </ul>
       <h2 className="title">The Open Source ChatShow</h2>
       <p>For the month of October, 2021, we have weekly virtual sessions showcasing voices from the open source community.
-          Feel free to <a href="https://us02web.zoom.us/webinar/register/WN_0i4q_-RxRnGyr3t_uD_XXw" target="_blank" rel="noopener noreferrer" className="join-us">
+          Feel free to <a href="https://us02web.zoom.us/webinar/register/WN_0i4q_-RxRnGyr3t_uD_XXw" target="_blank" rel="noopener noreferrer" className="link">
             join us!
           </a>
       </p>
       <p>
         You can also check out our <a href="https://frontendstudygroup.github.io/blog/" target="_blank" rel="noopener noreferrer" 
-        className="blog">blog</a> or contribute to <a href="https://github.com/frontendstudygroup/frontendstudygroup.github.io" target="_blank" rel="noopener noreferrer" className="project">this project.</a> 
+        className="link">blog</a> or contribute to <a href="https://github.com/frontendstudygroup/frontendstudygroup.github.io" target="_blank" rel="noopener noreferrer" className="link">this project.</a> 
       </p>
     </div>
   )
