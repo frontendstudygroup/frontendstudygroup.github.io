@@ -4,18 +4,15 @@ import { Link } from "react-router-dom";
 import './TableView.css';
 import Toggle from "../Toggle";
 
-
-let header = Object.keys(ResourcesList[0]).map((key, index) => {
-     return <th key={index}>{key === "id" && key}{key === "name" && key}{key === "url" && key}</th>
-  })
-
 export default function TableView() {
     
 return (
   <>
   <Toggle />
   <div className="table">
-        <tr>{header}</tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>URL</th>
         {
           ResourcesList.map(resource =>
           

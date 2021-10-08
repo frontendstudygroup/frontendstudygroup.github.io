@@ -10,9 +10,9 @@ export default function Toggle(){
     return (
         <>
             <div>
-                 <button className= "toggle" onClick={() => history.push('/TableView')}className="toggle"><img alt ="table" src={table}></img></button>
+                 <button className= "toggle" onClick={() => history.push('/TableView')}><img alt ="table" src={table}></img></button>
 
-                 <button className= "toggle" onClick={() => history.push('/resources')}className="toggle"><img alt ="card" src={card}></img></button>
+                 <button className= "toggle" onClick={() => history.push('/resources')}><img alt ="card" src={card}></img></button>
             </div>
         </>
 
