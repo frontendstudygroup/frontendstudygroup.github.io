@@ -7,9 +7,12 @@ import SingleResource from "./SingleResource/SingleResource";
 import Contact from "./ContactUs/Contact";
 import TableView from  "./Resources/TableView";
 
+
 const Router = () => (
+
   <BrowserRouter>
     <Header />
+    
     <Switch>
       <Route exact path="/" component={App} />
       <Route exact path="/resources" component={Resources} />
@@ -19,5 +22,4 @@ const Router = () => (
     </Switch>
   </BrowserRouter>
 );
-
 export default Router;

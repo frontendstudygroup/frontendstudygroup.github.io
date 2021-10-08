@@ -10,7 +10,7 @@
  .table td, .table th {
     border: 1px solid #ddd;
     padding: 40px;
-    padding-right: 90px;
+    padding-right: 78px;
   }
   
   .table tr:nth-child(even){background-color: #f2f2f2;}

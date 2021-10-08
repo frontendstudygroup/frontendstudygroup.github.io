@@ -2,6 +2,8 @@ import React from 'react';
 import ResourcesList from '../data/data.json';
 import { Link } from "react-router-dom";
 import './TableView.css';
+import Toggle from "../Toggle";
+
 
 let header = Object.keys(ResourcesList[0]).map((key, index) => {
      return <th key={index}>{key === "id" && key}{key === "name" && key}{key === "url" && key}</th>
@@ -10,7 +12,9 @@ let header = Object.keys(ResourcesList[0]).map((key, index) => {
 export default function TableView() {
     
 return (
-<div className="table">
+  <>
+  <Toggle />
+  <div className="table">
         <tr>{header}</tr>
         {
           ResourcesList.map(resource =>
@@ -24,7 +28,7 @@ return (
           )
         }
   
-</div>
-   
+  </div>
+   </>
   );
 }
