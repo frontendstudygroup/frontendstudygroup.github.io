@@ -1,0 +1,43 @@
+.inputfield_wrapper label {
+    text-align: left;
+    content: attr(type);
+    display: block;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    padding-bottom: 6px;
+    color: #19191a;
+}
+
+.inputfield_wrapper input[type="text"],
+input[type="email"] {
+  width: 100%;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 20px 0px 20px 7px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-bottom: 3px solid #19191a;
+}
+
+.inputfield_wrapper input[type="text"]::placeholder,
+.inputfield_wrapper input[type="email"]::placeholder {
+  font-size: 15px;
+}
+
+.inputfield_wrapper input[type="text"]:focus,
+.inputfield_wrapper input[type="email"]:focus {
+  border-bottom: 3px solid #78788c;
+}
+
+.inputfield_wrapper .formContentError{
+    text-align: left;
+    display: block;
+    margin: 4px 0;
+    font-style: italic;
+    font-size: 14px;
+    color: rgb(216, 14, 14);
+  }
