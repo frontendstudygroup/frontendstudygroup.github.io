@@ -1,5 +1,5 @@
 .fullCardContainer {
-  height: calc(100vh - 62px);
+  min-height: calc(100vh - 62px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,7 @@
 .fullCard {
   width: 400px;
   padding: 20px 30px;
+  margin: 30px auto;
   border: 1px solid rgb(0, 122, 124);
   box-shadow: 4px 5px 10px 0px rgb(0 122 124 / 30%);
   display: flex;
@@ -18,6 +19,10 @@
 .fullCardTitle {
   color: rgb(0, 122, 124);
   font-weight: 600;
+}
+
+.fullCardDescription {
+  line-height: 1.5em;
 }
 
 .fullCardLabelsContainer {
