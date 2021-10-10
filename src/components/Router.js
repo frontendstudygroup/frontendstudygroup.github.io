@@ -7,19 +7,23 @@ import Footer from "./Footer/Footer";
 import SingleResource from "./SingleResource/SingleResource";
 import Contact from "./ContactUs/Contact";
 import About from "./About/About";
+import TableView from  "./Resources/TableView";
+
 
 const Router = () => (
+
   <BrowserRouter>
     <Header />
+    
     <Switch>
       <Route exact path="/" component={App} />
       <Route exact path="/resources" component={Resources} />
       <Route path="/resources/:id" component={SingleResource} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/about" component={About} />
+      <Route exact path="/TableView" component={TableView} />
     </Switch>
     <Footer/>
   </BrowserRouter>
 );
-
 export default Router;
