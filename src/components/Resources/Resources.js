@@ -23,10 +23,6 @@ return (
               </article>)}
       </div> 
       <Disclaimer />
-    </>   </article>)
-          }
-      </div>     
-
-    </div>
+   </div> 
   );
 }

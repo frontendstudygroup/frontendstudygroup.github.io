@@ -1,15 +1,18 @@
 import React from 'react';
 import '../../assets/css/App.css';
 import './SingleResource.css';
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import data from '../data/data.json';
 import Disclaimer from '../Disclaimer/Disclaimer';
 
 export default function SingleResource() {
   const { id } = useParams();
-
+  const history = useHistory();
+  
   return (
-    <>
+    <div>
+      <button className="singleResourceBtn" onClick={() => history.goBack()}>Go Back</button>
+      
       <div className="fullCardContainer">
           { data
               .filter((resource) => resource.id === Number(id))
@@ -30,6 +33,6 @@ export default function SingleResource() {
               ))}
       </div>     
       <Disclaimer />
-    </>
+    </div>
   );
 }

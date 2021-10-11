@@ -102,7 +102,7 @@
       "September"
     ],
     "stipend": false,
-    "description": "Deeproot started in 2000. Their main product is deepOfix Mail Server and is based on Debian."
+    "description": "Open Mainframe Project also has its own open-source program and the mentees will be able to expand their knowledge on the mainframe technology. You’ll also help in contributing to open source projects which will make it easier for infrastructure applications to run on the mainframe.",
     "location": ["Remote"]
   },
   {
@@ -118,7 +118,7 @@
     ],
     "stipend": true,
     "location": ["Remote"],
-    "description": "An organisation dedicated to network functions virtualisation"
+    "description": "Their mission is to impinge on every individual who has the zeal to learn more. Around the year we conduct several educational programs and offer internship opportunities to the youngsters so that they become industry-ready."
   },
   {
     "id": 9,
@@ -153,7 +153,7 @@
     "internship_period": null,
     "application_period": [],
     "stipend": true,
-    "description": "Khan Academy is looking for talented software developers to create a free virtual classroom for the world. You can work on developing web solutions, data analysis developing classroom content, etc."
+    "description": "Khan Academy is looking for talented software developers to create a free virtual classroom for the world. You can work on developing web solutions, data analysis developing classroom content, etc.",
     "location": ["Remote"]
   },
   {
@@ -167,6 +167,7 @@
       "October"
     ],
     "stipend": true,
-    "location": ["Remote"]
+    "location": ["Remote"],
+    "description": "You can contribute to participating projects on GitHub and even if you’re not able to make a large major contribution what you can get out of it is how to use Git and Github."
   }
 ]

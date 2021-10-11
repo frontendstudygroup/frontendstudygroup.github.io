@@ -5,7 +5,6 @@ import './TableView.css';
 import Toggle from "../Toggle";
 
 export default function TableView() {
-    
 return (
   <div className="container">
   <Toggle />
