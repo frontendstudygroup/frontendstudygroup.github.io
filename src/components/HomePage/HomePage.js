@@ -7,12 +7,10 @@ const HomePage = () => {
 
     return (
 
-    <div>
+    <div className="body-style">
         <h1 className="title"> Open Source Internships</h1>
-        <div className="line"></div>
         <span className="sentence">We are an organization to help you find open source internships</span>
         <span className="open-source-line">What Open Source is ... </span>
-        <span className="box"></span>
         <div className="open-source-definition">a term that is referred to Open Source Software that is designed to be 
              publicly accessible meaning that any user can see, modify, and distribute the code.
         </div>

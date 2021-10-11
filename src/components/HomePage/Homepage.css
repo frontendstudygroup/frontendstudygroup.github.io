@@ -1,19 +1,17 @@
-html, body {
+.body-style{
     margin: 0;
     height: 100%;
     background: radial-gradient(111.36% 277.12% at -7.7% 2.76%, rgba(135, 55, 103, 0.74499) 0%, rgba(54, 55, 79, 0.74499) 0.02%, rgba(198, 209, 211, 0.889953) 9.88%, rgba(215, 231, 243, 0) 61.62%, #A98C9D 99.84%, rgba(204, 142, 179, 0) 120%, #ab8e9f 100%);
-  }
-  .line{
-    position: absolute;
-    width: 99.6%;
-    height: 0px;
-    border: 3px solid #BBBBBB;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 75px;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+}
+
   h1.title{
-    position: absolute;
-    width: 450px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: 28px;
     font-family: Roboto;
     font-style: normal;
@@ -21,14 +19,14 @@ html, body {
     font-size: 35px;
     line-height: 28px;
     color: #4A4747;
-    margin: 20px;
-    margin-block-start: 0.98em;
-    margin-block-end: 0.98em;
-    margin-inline-start: 520px;
-    margin-inline-end: 550px;
+    border-bottom: 3px solid #BBBBBB;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    margin-top: 25px;
+    padding-bottom: 50px;
   }
   .sentence{
-    position: absolute;
+    display: flex;
+    justify-content: center;
     width: 650px;
     height: 21px;
     font-family: Roboto;
@@ -37,11 +35,10 @@ html, body {
     font-size: 25px;
     line-height: 21px;
     color: #5C4949;
-    margin-top: 110px;
-    margin-left: -295px;
+    margin-top: 45px;
   }
   .open-source-line{
-    position: absolute;
+    display: flex;
     width: 250px;
     height: 21px;
     font-family: Roboto;
@@ -50,35 +47,34 @@ html, body {
     font-size: 25px;
     line-height: 21px;
     color: #5C4949;
-    margin-top: 190px;
-    margin-left: -550px;
+    margin-top: 100px;
+    margin-left: -820px;
   }
-  .box{
-    position: absolute;
-      width: 730px;
-      height: 120px;
-      background: #DEE0E4;
-      box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-      border-radius: 5px;
-      margin-top: 240px;
-      margin-left: -250px;
-  }
+
   .open-source-definition{
-      position: absolute;
-      width: 720px;
-      height: 32px;
+      display: flex;
+      width: 750px;
+      max-width: fit-content;
+      height: 90px;
+      max-height: fit-content;
       font-family: Roboto;
       font-style: normal;
       font-weight: normal;
       font-size: 22px;
       line-height: 23px;
-      margin-top: 270px;
-      margin-left: 480px;
+      margin-top: 25px;
+      margin-left: 380px;
       color: #5C4949;
+      border-color: none;
+      background:#DEE0E4;
+      border-radius: 5px;
+      box-shadow: inset 0px 0px 8px;
+      padding-top: 15px;
   }
   
   .ending-line{
-    position: absolute;
+    display: flex;
+    justify-content: center;
     width: 220px;
     height: 21px;
     font-family: Roboto;
@@ -87,16 +83,17 @@ html, body {
     font-size: 22px;
     line-height: 21px;
     color: #000000;
-    margin-top: 480px;
-    margin-left: -118px;
+    margin-top: 100px;
   }
   button.button{
-      position: absolute;
+      display: flex;
+      justify-content: center;
       width: 149px;
       height: 31px;
       background: rgba(36, 16, 36, 0.79);
       border-radius: 5px;
       color: white;
-      margin-top: 530px;
-      margin-left: -75px;
+      font-size: large;
+      margin-top: 40px;
+      margin-bottom: 50px;
   }
