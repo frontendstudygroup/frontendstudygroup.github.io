@@ -10,18 +10,20 @@ import Toggle from "../Toggle"
 
 export default function Resources() {
 return (
-    <>
+    <div className="container">
         <Toggle />
        <div className="grid">
         {
             ResourcesList.map(resource => 
               <article key={resource.id}> 
-                <div className="text">{resource.name}
-               </div>
+                <h1>{resource.name}</h1>
+                <p className="text">{resource.body}
+               </p>
                <Link className="resourceLink" to={`/resources/${resource.id}`}><span>More info</span></Link>
-              </article>)}
+              </article>)
+          }
       </div>     
 
-    </>
+    </div>
   );
 }
