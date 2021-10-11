@@ -8,7 +8,8 @@
     "internship_period": 3,
     "application_period": ["March", "April"],
     "stipend": true,
-    "location": ["Remote"]
+    "location": ["Remote"],
+    "description": "You can work with famous organizations like, Debian, Fedora, GCC, FreeBSD, Git (Not GitHub), Gnome, OpenSUSE Arduino, and other more top names in Open Source community."
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "internship_period": 3,
     "application_period": ["April", "May"],
     "stipend": false,
-    "location": ["Remote", "Boston, US"]
+    "location": ["Remote", "Boston, US"],
+    "description": "The oldest, mother of all organizations which started the free software movement. The Internship program runs thrice a year."
   },
   {
     "id": 3,
@@ -43,7 +45,8 @@
       "December"
     ],
     "stipend": true,
-    "location": ["Remote"]
+    "location": ["Remote"],
+    "description": "Project which develops, maintains, supports the free software stack for accelerated graphics for all graphics hardware."
   },
   {
     "id": 4,
@@ -54,7 +57,8 @@
     "internship_period": 3,
     "application_period": ["February", "March", "April"],
     "stipend": true,
-    "location": ["Remote"]
+    "location": ["Remote"],
+    "description": "Project to entice/enhance women participation in Rust, Clojure, JavaScript, PHP, Python, Ruby on Rails, Rails web framework etc."
   },
   {
     "id": 5,
@@ -65,7 +69,8 @@
     "internship_period": 4,
     "application_period": ["February", "March"],
     "stipend": true,
-    "location": ["United States"]
+    "location": ["United States"],
+    "description": "A project to collect, understand earth observational data using a variety of sensors, testing and making cohesive sense out of the data collected."
   },
   {
     "id": 6,
@@ -76,7 +81,8 @@
     "internship_period": 3,
     "application_period": ["January", "February", "March"],
     "stipend": true,
-    "location": ["Remote"]
+    "location": ["Remote"],
+    "description": "FOSS Project which works to use and promote software-defined networking and network functions visualization."
   },
   {
     "id": 7,
@@ -96,6 +102,7 @@
       "September"
     ],
     "stipend": false,
+    "description": "Deeproot started in 2000. Their main product is deepOfix Mail Server and is based on Debian."
     "location": ["Remote"]
   },
   {
@@ -110,7 +117,8 @@
       "February"
     ],
     "stipend": true,
-    "location": ["Remote"]
+    "location": ["Remote"],
+    "description": "An organisation dedicated to network functions virtualisation"
   },
   {
     "id": 9,
@@ -121,7 +129,8 @@
     "internship_period": 3,
     "application_period": ["February", "March", "April"],
     "stipend": true,
-    "location": ["Remote"]
+    "location": ["Remote"],
+    "description": "Outreachy started in 2006, wrapped up, and started up again in 2010. I did share an interview with Maria Glukova which shared her experience. Twice a year it runs and has in excess of 30+ interns per year from 20+ projects including Debian, Redhat, OpenStack, and many others."
   },
   {
     "id": 10,
@@ -132,7 +141,8 @@
     "internship_period": 3,
     "application_period": ["June", "July"],
     "stipend": false,
-    "location": ["Remote"]
+    "location": ["Remote"],
+    "description": "Technical writers can spend three months working closely with an open-source community. Bring their technical writing expertise to the project’s documentation. Google uses Payoneer to pay a stipend to technical writers who have successfully completed their Season of Docs projects."
   },
   {
     "id": 11,
@@ -143,6 +153,7 @@
     "internship_period": null,
     "application_period": [],
     "stipend": true,
+    "description": "Khan Academy is looking for talented software developers to create a free virtual classroom for the world. You can work on developing web solutions, data analysis developing classroom content, etc."
     "location": ["Remote"]
   },
   {
