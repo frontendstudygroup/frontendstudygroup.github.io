@@ -1,0 +1,12 @@
+.disclaimerContainer {
+  padding: 30px 80px 30px 80px;
+}
+
+.disclaimerLink {
+  text-decoration: underline;
+  color: rgb(0, 122, 124);
+}
+
+.disclaimerLink:hover {
+  color: rgba(0, 122, 124, 0.5);
+}
