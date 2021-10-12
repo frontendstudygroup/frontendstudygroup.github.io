@@ -5,27 +5,26 @@ import './TableView.css';
 import Toggle from "../Toggle";
 
 export default function TableView() {
-    
 return (
-  <>
+  <div className="container">
   <Toggle />
-  <div className="table">
-        <th>ID</th>
-        <th>Name</th>
-        <th>URL</th>
-        {
-          ResourcesList.map(resource =>
-          
-          <tr key={resource.id}>
-            <td>{resource.id}</td>
-            <td>{resource.name}</td>
-            <td>{<Link className="resourceLink" to={`/resources/${resource.id}`}><span>More info</span></Link>}</td>  
-         </tr>
-         
-          )
-        }
-  
-  </div>
-   </>
+        <table> 
+            <th>ID</th>
+            <th>Name</th>
+            <th>URL</th>
+            {
+              ResourcesList.map(resource =>
+              
+              <tr key={resource.id}>
+                <td>{resource.id}</td>
+                <td>{resource.name}</td>
+                <td>{<Link className="resourceLink" to={`/resources/${resource.id}`}><span>More info</span></Link>}</td>  
+            </tr>
+            
+              )
+            }
+        </table>
+
+   </div>
   );
 }

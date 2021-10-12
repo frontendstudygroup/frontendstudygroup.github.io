@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Google Summer of Code",
+    "body": "Google Summer of Code program is a program started by Google and has completed 16 years. It is a program that aims to promote open-source software development among university students. There are a few organizations and these organizations have mentors.",
     "url": "https://summerofcode.withgoogle.com/",
     "eligibility_criteria": "none",
     "internship_period": 3,
@@ -12,7 +13,8 @@
   },
   {
     "id": 2,
-    "name": "FSF",
+    "name": "Free Software Foundation (FSF)",
+    "body": "If you want to intern at the Free Software Foundation and you know web development, systems, networking, software licensing you can consider the FSF internship program. It has pretty good projects over there and here you get to work with the organizations that sponsor the GNU Project.",
     "url": "https://www.fsf.org/volunteer/internships",
     "eligibility_criteria": "none",
     "internship_period": 3,
@@ -24,6 +26,7 @@
   {
     "id": 3,
     "name": "X.Org Endless Vacation of Code",
+    "body": "X.Org Endless Vacation of Code (EVoC) is a Google Summer of Code (GSoC)-like project initiated in 2008 funded by the X.Org Foundation. It allows students to participate to X. Org-related projects during their vacation, at any time of the year.",
     "url": "https://www.x.org/wiki/XorgEVoC/",
     "eligibility_criteria": "none",
     "internship_period": 4,
@@ -47,7 +50,8 @@
   },
   {
     "id": 4,
-    "name": "RGSOC",
+    "name": "Redox OS Summer of Code (RGSOC)",
+    "body": "Redox is a general-purpose operating system written in pure Rust. The Redox OS Summer of Code is the primary use of donations to the Redox OS project. Here, the students who have already demonstrated a desire and ability to contribute to Redox OS get selected.",
     "url": "https://railsgirlssummerofcode.org/blog/2017-07-12-namaste-rgsoc-2017",
     "eligibility_criteria": "For Girls only",
     "internship_period": 3,
@@ -58,7 +62,8 @@
   },
   {
     "id": 5,
-    "name": "DataONE",
+    "name": "Data Observation Network for Earth (DataONE)",
+    "body": "The Data Observation Network for Earth (DataONE) is a virtual organization dedicated to providing open, persistent, robust, and secure access to biodiversity and environmental data, supported by the U.S. National Science Foundation.",
     "url": "https://old.dataone.org/internships",
     "eligibility_criteria": "none",
     "internship_period": 4,
@@ -71,6 +76,7 @@
     "id": 6,
     "name": "OpenDaylight",
     "url": "http://archive15.opendaylight.org/community/summer-intern-program",
+    "body": "Open Daylight Project‘s mission is to facilitate a community-led, industry-supported open source framework, including code and architecture, to accelerate and advance a common, robust Software-Defined Networking platform.",
     "eligibility_criteria": "none",
     "internship_period": 3,
     "application_period": ["January", "February", "March"],
@@ -80,12 +86,12 @@
   },
   {
     "id": 7,
-    "name": "Deeproot",
-    "url": "https://abhas.io/student-projects/",
+    "name": "Open Mainframe Project Mentorship Program",
+    "body": " Open Mainframe Project Mentorship Program is the open-source program that is hosted by the Linux Foundation and aims to introduce everyone to the mainframe community and development environment on Linux.",
+    "url": "https://www.openmainframeproject.org/projects/mentorship-program",
     "eligibility_criteria": "none",
     "internship_period": 3,
     "application_period": [
-      "January",
       "February",
       "March",
       "April",
@@ -93,43 +99,32 @@
       "June",
       "July",
       "August",
-      "September",
-      "October",
-      "November",
-      "December"
+      "September"
     ],
     "stipend": false,
-    "location": ["Bangalore", "Remote"],
-    "description": "Deeproot started in 2000. Their main product is deepOfix Mail Server and is based on Debian."
+    "description": "Open Mainframe Project also has its own open-source program and the mentees will be able to expand their knowledge on the mainframe technology. You’ll also help in contributing to open source projects which will make it easier for infrastructure applications to run on the mainframe.",
+    "location": ["Remote"]
   },
   {
     "id": 8,
-    "name": "OPNFV",
-    "url": "https://wiki.opnfv.org/display/DEV/Internship-program",
+    "name": "GirlsScript Summer of Code",
+    "body": "Aims to help beginners get started with Open Source Development while encouraging diversity. Throughout the program, participants contribute to different projects under guidance of experienced mentors.",
+    "url": "https://gssoc.girlscript.tech/",
     "eligibility_criteria": "none",
     "internship_period": 3,
     "application_period": [
       "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December"
+      "February"
     ],
     "stipend": true,
     "location": ["Remote"],
-    "description": "An organisation dedicated to network functions virtualisation"
+    "description": "Their mission is to impinge on every individual who has the zeal to learn more. Around the year we conduct several educational programs and offer internship opportunities to the youngsters so that they become industry-ready."
   },
   {
     "id": 9,
     "name": "Outreachy",
     "url": "https://www.gnome.org/outreachy/",
+    "body": "The Outreachy internship projects focus on programming, documentation, project marketing, etc. During the application process, you need to show some genuine eagerness that why you want to be an Outreachy intern and in turn, what you’re going to accomplish, and then how you plan to promote diversity and all sorts of things.",
     "eligibility_criteria": "Women, trans and cisgendered women",
     "internship_period": 3,
     "application_period": ["February", "March", "April"],
@@ -141,6 +136,7 @@
     "id": 10,
     "name": "Google Season of Docs",
     "url": "https://developers.google.com/season-of-docs",
+    "body": "Google Season of Docs is a program by Google where technical writers and open source organizations come together and work on open source projects. They aim to raise awareness of open source, of docs, and of technical writing.",
     "eligibility_criteria": "Women, trans and cisgendered women",
     "internship_period": 3,
     "application_period": ["June", "July"],
@@ -150,13 +146,28 @@
   },
   {
     "id": 11,
-    "name": "Khan Academy",
-    "url": "https://www.khanacademy.org/careers/interns",
+    "name": "Season of KDE",
+    "body": "The Season of KDE, hosted by the KDE community, is an outreach program for all individuals across the world. KDE is an international free software community that develops free and open-source software and you can contribute to KDE through the Season of KDE program. ",
+    "url": "https://season.kde.org/",
     "eligibility_criteria": "none",
     "internship_period": null,
     "application_period": [],
     "stipend": true,
+    "description": "Khan Academy is looking for talented software developers to create a free virtual classroom for the world. You can work on developing web solutions, data analysis developing classroom content, etc.",
+    "location": ["Remote"]
+  },
+  {
+    "id": 12,
+    "name": "Digital Ocean Hacktoberfest",
+    "body": "A month-long celebration of open source software run by DigitalOcean. Here, you need to submit four or more quality pull requests. The main idea over here is that there’s no such thing as a selection criterion in this particular program. ",
+    "url": "https://hacktoberfest.digitalocean.com/",
+    "eligibility_criteria": "none",
+    "internship_period": 1,
+    "application_period": [
+      "October"
+    ],
+    "stipend": true,
     "location": ["Remote"],
-    "description": "Khan Academy is looking for talented software developers to create a free virtual classroom for the world. You can work on developing web solutions, data analysis developing classroom content, etc."
+    "description": "You can contribute to participating projects on GitHub and even if you’re not able to make a large major contribution what you can get out of it is how to use Git and Github."
   }
 ]

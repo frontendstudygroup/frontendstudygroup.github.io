@@ -50,6 +50,22 @@
   color: rgba(0, 122, 124, 0.5);
 }
 
+.singleResourceBtn {
+  padding: 8px;
+  margin: 14px 40px;
+  width: 13%;
+  border: 1px solid rgb(0, 122, 124);
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: transparent;
+  text-align: center;
+}
+
+.singleResourceBtn:hover {
+  background: rgb(0, 122, 124);
+  color: #fff;
+}
+
 @media (max-width: 875px) {
   .fullCard {
     width: auto;
