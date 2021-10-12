@@ -39,6 +39,7 @@
   }
   .open-source-line{
     display: flex;
+    align-self: flex-start;
     width: 250px;
     height: 21px;
     font-family: Roboto;
@@ -48,11 +49,12 @@
     line-height: 21px;
     color: #5C4949;
     margin-top: 100px;
-    margin-left: -820px;
+    margin-left: 150px;
   }
 
   .open-source-definition{
       display: flex;
+      text-align: -webkit-center;
       width: 750px;
       max-width: fit-content;
       height: 90px;
@@ -63,7 +65,7 @@
       font-size: 22px;
       line-height: 23px;
       margin-top: 25px;
-      margin-left: 380px;
+      margin-left: 340px;
       color: #5C4949;
       border-color: none;
       background:#DEE0E4;
