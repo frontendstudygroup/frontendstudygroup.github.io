@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders Supported by Women Who Code link', () => {
+test('renders title on Home page', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Supported by Women Who Code/i);
-  expect(linkElement).toBeInTheDocument();
+  const titleElement = screen.getByText('Open Source Internships');
+  expect(titleElement).toBeInTheDocument();
 });
