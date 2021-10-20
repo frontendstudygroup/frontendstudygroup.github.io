@@ -54,9 +54,9 @@ const Bubblechart = (aData) => {
     .style("fill", "#ffffff");
 
   node.append("text")
-    .attr("dy", ".1em")
+    .attr("dy", "2em")
     .style("text-anchor", "middle")
-    .text(function (d) { return d.data.contributions})
+    .text(function (d) { return  d.data.contributions})
     .style("fill", "#EEEfff");
 
 
