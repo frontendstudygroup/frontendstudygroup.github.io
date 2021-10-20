@@ -26,7 +26,7 @@ const GitApi = () => {
 return (
 
   <div>
-    {contributor.map(d=><p>{d.login}</p>)}
+    
     <Bubblechart data = {contributor}></Bubblechart>
     
   </div>
