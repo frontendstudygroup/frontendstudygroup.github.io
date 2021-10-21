@@ -6,7 +6,7 @@ const GitApi = () => {
   const [contributor, setContributor] = useState([]);
 
   useEffect(() => {
-    const url = "https://api.github.com/repos/Priyami/frontendstudygroup.github.io/contributors";
+    const url = "https://api.github.com/repos/frontendstudygroup/frontendstudygroup.github.io/contributors";
 
     const fetchData = async () => {
       try {
