@@ -31,6 +31,11 @@
 .info > a {
   color: #71b6f6;
 }
+.info .contributor {
+  color: #71b6f6;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .copyright > p {
   color: #a3a9a4;
