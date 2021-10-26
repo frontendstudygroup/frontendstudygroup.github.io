@@ -1,0 +1,10 @@
+.b-chart
+{
+    display: flex;
+    justify-content:center;
+}
+
+.title
+{
+  justify-content: flex-start;
+}

@@ -8,7 +8,6 @@ import SingleResource from "./SingleResource/SingleResource";
 import Contact from "./ContactUs/Contact";
 import About from "./About/About";
 import TableView from  "./Resources/TableView";
-import Bubblechart from "./Resources/Bubblechart";
 import GitApi from "./Api/GitApi";
 
 
@@ -24,8 +23,7 @@ const Router = () => (
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/about" component={About} />
       <Route exact path="/TableView" component={TableView} />
-      <Route exact path="/bubblechart" component={Bubblechart} />
-      <Route exact path="/gitapi" component={GitApi} />
+      <Route exact path="/contributor" component={GitApi} />
 
     </Switch>
     <Footer/>
