@@ -1,9 +1,12 @@
 import React from 'react';
 import './Footer.css'
 import WWCodeFrontEnd from '../../assets/images/WWCode-Logo.png'
+import { useHistory } from 'react-router-dom';
 
 
 export default function Footer(){
+    const history = useHistory();
+
     return(
         <div className="footer">
             <div className="footer-items">
@@ -42,6 +45,9 @@ export default function Footer(){
             <a href="https://www.womenwhocode.com/frontend"
              target="_blank"
              rel="noopener noreferrer">https://www.womenwhocode.com/frontend</a>
+            
+             <p className="contributor" onClick={() => history.push('/contributor')}>contributors
+             </p>
              </div>
              </div>
 
