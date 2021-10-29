@@ -26,9 +26,11 @@ const GitApi = () => {
 
 return (
 
-  <div className = "b-chart">
-    <h1 className="b-title">Contributors</h1>
-    <Bubblechart  data = {contributor}></Bubblechart>
+  <div className="container">
+      <h1 className="b-title">Contributors</h1>
+    <div className = "b-chart">
+      <Bubblechart  data = {contributor}></Bubblechart>
+    </div>
   </div>
 );
 };
