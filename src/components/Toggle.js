@@ -8,7 +8,7 @@ import './Toggle.css';
 export default function Toggle(){
     const history = useHistory();
     return (
-        <div className="flex">
+        <div className="flex" data-testid="toggle">
              <h1>Open Source Programs</h1>
             <div className="flex-container">
                     <button  onClick={() => history.push('/TableView')}><img alt ="table" src={table}></img></button>
