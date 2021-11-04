@@ -8,8 +8,8 @@ documentation article.
 ```
 1. Set up your static web app repository on Github
 2. Create an account on the Azure portal
-3. Create a new project using the Azure portal.
+3. Using the Azure portal, select "create a new project" option.
 4. Fill in the details of your project, and link your Github account to Azure.
 5. Select "create" after which the build .yml files will be created in your 
-Github repository and begin deplyment using Github Actions.
+Github repository and begin deployment using Github Actions.
 ```
