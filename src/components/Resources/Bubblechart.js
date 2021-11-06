@@ -4,9 +4,9 @@ import "./Bubblechart.css";
 
 
 const Bubblechart = (aData) => {
-  let jsonToDisplay = { "children":[...aData.data] };
-  let diameter = 1000,
-    color = d3.scaleOrdinal(["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"]);
+  let jsonToDisplay = { "children": [...aData.data] };
+  let diameter = 1000;
+  // color = d3.scaleOrdinal(["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"]);
   let bubble = d3.pack()
     .size([diameter, diameter])
     .padding(2);
@@ -25,9 +25,10 @@ const Bubblechart = (aData) => {
     .attr('class', 'chart-svg');
 
 
+
   let root = d3.hierarchy(jsonToDisplay)
     .sum(function (d) { return d.id })
-    .sort(function (a, b) { return b.id - a.id });
+  //.sort(function (a, b) { return b.id - a.id });
 
 
   bubble(root);
@@ -36,28 +37,45 @@ const Bubblechart = (aData) => {
     .data(root.children)
     .enter()
     .append('g').attr('class', 'node')
-    .attr('transform', function (d) {return 'translate(' + d.x + ' ' + d.y + ')'; })
+    .attr('transform', function (d) { return 'translate(' + d.x + ' ' + d.y + ')'; })
 
+  let defs = node.append('defs');
+
+  defs.append("pattern")
+    .attr("id", function (d) { return d.data.id })
+
+    .attr("width", 10)
+    .attr("height", 10)
+    .append("image")
+    .attr("xlink:href", function (d) {
+      return d.data.avatar_url
+    })
+    .attr('height', function (d) { return d.r * 2 })
+    .attr('width', function (d) { return d.r * 2 * 1.02 })
+    .attr("x", 0)
+    .attr("y", 0);
 
   node.append("circle")
     .attr('r', function (d) {
-      return d.r;
+      return d.r/(Math.sqrt(1.5));
     })
-    .style("fill", function (d) {
-      return color(d);
-    });
+    .style("fill", "#fff")
+    .style("fill", function (d) { return "url(#" + d.data.id + ")" })
+    .style("stroke", "black")
+    
 
   node.append("text")
     .attr("dy", ".3em")
     .style("text-anchor", "middle")
-    .text(function (d) { return d.data.login})
+    .text(function (d) { return d.data.login })
     .style("fill", "#ffffff");
 
   node.append("text")
     .attr("dy", "2em")
     .style("text-anchor", "middle")
-    .text(function (d) { return  d.data.contributions})
+    .text(function (d) { return d.data.contributions })
     .style("fill", "#EEEfff");
+
 
 
   return (
