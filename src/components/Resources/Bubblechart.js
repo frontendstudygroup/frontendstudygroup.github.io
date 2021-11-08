@@ -19,6 +19,7 @@ const Bubblechart = (aData) => {
   }
 
   let svg = d3.select('#chart').append('svg')
+  
     .attr('viewBox', '0 0 ' + (diameter + margin.right) + ' ' + diameter)
     .attr('width', (diameter + margin.right))
     .attr('height', diameter)
@@ -27,22 +28,58 @@ const Bubblechart = (aData) => {
 
 
   let root = d3.hierarchy(jsonToDisplay)
-    .sum(function (d) { return d.id })
-  //.sort(function (a, b) { return b.id - a.id });
-
-
+    .sum(function (d) { console.log(d.id); return d.id; })
+    
+    .sort(function (a, b) { return b.id - a.id });
+  
+  
   bubble(root);
 
   let node = svg.selectAll('node')
     .data(root.children)
-    .enter()
-    .append('g').attr('class', 'node')
+  .enter().append('g')
+    .attr('class', 'node')
     .attr('transform', function (d) { return 'translate(' + d.x + ' ' + d.y + ')'; })
+    
+    let tooltip = svg
+    .append("div")
+    .style("opacity", 1)
+    .attr("id", "tooltip")
+    .style("z-index", "10") 
+    .style("background-color", "black")
+    .style("border-radius", "5px")
+    .style("padding", "10px")
+    .style("color", "white")
+    .style("position", "absolute");
+  let showTooltip = function(d) {
+    tooltip
+      .transition()
+      .duration(200)
+    tooltip
+      .style("opacity", 1)
+      .style("visibility", "visible")
+      .style("stroke", "black")
+      .text("Player: jklkjljljljlklklkljjkljlkj <br> Points with franchise: " )
+      .style("left", (d.x + (d3.pointer(this)[0] + 90)) + "px")
+      .style("top", (d.y + (d3.pointer(this)[1])) + "px");
+  }
+  let moveTooltip = function(d) {
+    tooltip
+      .style("left", (d.x + (d3.pointer(this)[0] + 30)) + "px")
+      .style("top", (d.y + (d3.pointer(this)[1] + 30)) + "px");
+  }
+  let hideTooltip = function(d) {
+          tooltip
+            .transition()
+            .duration(200)
+            .style("opacity", 0)
+            .style("visibility", "hidden");
+        }
 
   let defs = node.append('defs');
 
   defs.append("pattern")
-    .attr("id", function (d) { return d.data.id })
+    .attr("id", function (d) { console.log(d.data.id); return d.data.id })
 
     .attr("width", 10)
     .attr("height", 10)
@@ -54,7 +91,10 @@ const Bubblechart = (aData) => {
     .attr('width', function (d) { return d.r * 2 * 1.02 })
     .attr("x", 0)
     .attr("y", 0);
-
+  
+ 
+  
+  
   node.append("circle")
     .attr('r', function (d) {
       return d.r/(Math.sqrt(1.5));
@@ -62,7 +102,9 @@ const Bubblechart = (aData) => {
     .style("fill", "#fff")
     .style("fill", function (d) { return "url(#" + d.data.id + ")" })
     .style("stroke", "black")
-    
+    .on("mouseover", showTooltip)
+    .on("mousemove", moveTooltip)
+    .on("mouseleave", hideTooltip)
 
   node.append("text")
     .attr("dy", ".3em")
