@@ -11,6 +11,8 @@ text {
   .chart {
     width: 1500px;
     height: 1500px;
+    background: rgb(13, 13, 14);   
+
   }
   
   .chart-svg {
@@ -18,4 +20,14 @@ text {
     height: 100%;
   }
   
-  
+  div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    padding: 8px;
+    margin-top: -20px;
+    font: 16px sans-serif;
+    background: #ddd;
+    pointer-events: none;
+  }

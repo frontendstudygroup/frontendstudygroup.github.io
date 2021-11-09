@@ -25,7 +25,8 @@ const Bubblechart = (aData) => {
     .attr('height', diameter)
     .attr('class', 'chart-svg');
 
-
+  
+    
 
   let root = d3.hierarchy(jsonToDisplay)
     .sum(function (d) { console.log(d.id); return d.id; })
@@ -40,26 +41,28 @@ const Bubblechart = (aData) => {
   .enter().append('g')
     .attr('class', 'node')
     .attr('transform', function (d) { return 'translate(' + d.x + ' ' + d.y + ')'; })
+
+   
     
-    let tooltip = svg
+  /*let tooltip = node.append('tooltip')
     .append("div")
-    .style("opacity", 1)
-    .attr("id", "tooltip")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
     .style("z-index", "10") 
     .style("background-color", "black")
     .style("border-radius", "5px")
     .style("padding", "10px")
     .style("color", "white")
-    .style("position", "absolute");
+    
   let showTooltip = function(d) {
     tooltip
       .transition()
       .duration(200)
-    tooltip
       .style("opacity", 1)
-      .style("visibility", "visible")
       .style("stroke", "black")
-      .text("Player: jklkjljljljlklklkljjkljlkj <br> Points with franchise: " )
+      .text(function (d) { 
+        console.log("contribution" + d.data.contributions);
+        return "Name : " + d.data.login + "<br/>Contribution: " + d.contributions })
       .style("left", (d.x + (d3.pointer(this)[0] + 90)) + "px")
       .style("top", (d.y + (d3.pointer(this)[1])) + "px");
   }
@@ -74,7 +77,7 @@ const Bubblechart = (aData) => {
             .duration(200)
             .style("opacity", 0)
             .style("visibility", "hidden");
-        }
+        }*/
 
   let defs = node.append('defs');
 
@@ -102,9 +105,31 @@ const Bubblechart = (aData) => {
     .style("fill", "#fff")
     .style("fill", function (d) { return "url(#" + d.data.id + ")" })
     .style("stroke", "black")
-    .on("mouseover", showTooltip)
-    .on("mousemove", moveTooltip)
-    .on("mouseleave", hideTooltip)
+    .on("mouseover", mouseover)
+    .on("mousemove", mousemove)
+    .on("mouseout", mouseout);
+
+    
+let div = d3.select("#bubble").append("div")
+    .attr("class", "tooltip")
+    .style("display", "none");
+
+function mouseover() {
+  div.style("display", "inline");
+}
+
+function mousemove(event,d) {
+  const[x, y] = d3.pointer(event);
+  div
+      .text(x + ", " + y)
+      .style("left", (x) + "px")
+      .style("top", (y) + "px");
+}
+
+function mouseout() {
+  div.style("display", "none");
+}
+  
 
   node.append("text")
     .attr("dy", ".3em")
@@ -121,7 +146,7 @@ const Bubblechart = (aData) => {
 
 
   return (
-    <div>
+    <div id ="bubble" className ="bubble">
       <svg id="chart" className="chart" ></svg>
     </div>
   );
