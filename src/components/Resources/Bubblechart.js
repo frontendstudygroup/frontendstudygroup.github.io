@@ -19,65 +19,29 @@ const Bubblechart = (aData) => {
   }
 
   let svg = d3.select('#chart').append('svg')
-  
+
     .attr('viewBox', '0 0 ' + (diameter + margin.right) + ' ' + diameter)
     .attr('width', (diameter + margin.right))
     .attr('height', diameter)
     .attr('class', 'chart-svg');
 
-  
-    
+
+
 
   let root = d3.hierarchy(jsonToDisplay)
     .sum(function (d) { console.log(d.id); return d.id; })
-    
+
     .sort(function (a, b) { return b.id - a.id });
-  
-  
+
+
   bubble(root);
 
   let node = svg.selectAll('node')
     .data(root.children)
-  .enter().append('g')
+    .enter().append('g')
     .attr('class', 'node')
     .attr('transform', function (d) { return 'translate(' + d.x + ' ' + d.y + ')'; })
 
-   
-    
-  /*let tooltip = node.append('tooltip')
-    .append("div")
-    .style("opacity", 0)
-    .attr("class", "tooltip")
-    .style("z-index", "10") 
-    .style("background-color", "black")
-    .style("border-radius", "5px")
-    .style("padding", "10px")
-    .style("color", "white")
-    
-  let showTooltip = function(d) {
-    tooltip
-      .transition()
-      .duration(200)
-      .style("opacity", 1)
-      .style("stroke", "black")
-      .text(function (d) { 
-        console.log("contribution" + d.data.contributions);
-        return "Name : " + d.data.login + "<br/>Contribution: " + d.contributions })
-      .style("left", (d.x + (d3.pointer(this)[0] + 90)) + "px")
-      .style("top", (d.y + (d3.pointer(this)[1])) + "px");
-  }
-  let moveTooltip = function(d) {
-    tooltip
-      .style("left", (d.x + (d3.pointer(this)[0] + 30)) + "px")
-      .style("top", (d.y + (d3.pointer(this)[1] + 30)) + "px");
-  }
-  let hideTooltip = function(d) {
-          tooltip
-            .transition()
-            .duration(200)
-            .style("opacity", 0)
-            .style("visibility", "hidden");
-        }*/
 
   let defs = node.append('defs');
 
@@ -94,13 +58,13 @@ const Bubblechart = (aData) => {
     .attr('width', function (d) { return d.r * 2 * 1.02 })
     .attr("x", 0)
     .attr("y", 0);
-  
- 
-  
-  
+
+
+
+
   node.append("circle")
     .attr('r', function (d) {
-      return d.r/(Math.sqrt(1.5));
+      return d.r / (Math.sqrt(1.5));
     })
     .style("fill", "#fff")
     .style("fill", function (d) { return "url(#" + d.data.id + ")" })
@@ -109,27 +73,27 @@ const Bubblechart = (aData) => {
     .on("mousemove", mousemove)
     .on("mouseout", mouseout);
 
-    
-let div = d3.select("#bubble").append("div")
+
+  let div = d3.select("#bubble").append("div")
     .attr("class", "tooltip")
     .style("display", "none");
 
-function mouseover() {
-  div.style("display", "inline");
-}
+  function mouseover() {
+    div.style("display", "inline");
+  }
 
-function mousemove(event,d) {
-  const[x, y] = d3.pointer(event);
-  div
+  function mousemove(event, d) {
+    const [x, y] = d3.pointer(event);
+    div
       .text(x + ", " + y)
       .style("left", (x) + "px")
       .style("top", (y) + "px");
-}
+  }
 
-function mouseout() {
-  div.style("display", "none");
-}
-  
+  function mouseout() {
+    div.style("display", "none");
+  }
+
 
   node.append("text")
     .attr("dy", ".3em")
@@ -146,7 +110,7 @@ function mouseout() {
 
 
   return (
-    <div id ="bubble" className ="bubble">
+    <div id="bubble" className="bubble">
       <svg id="chart" className="chart" ></svg>
     </div>
   );
