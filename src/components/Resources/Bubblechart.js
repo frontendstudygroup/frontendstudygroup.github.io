@@ -81,14 +81,15 @@ const Bubblechart = (aData) => {
   }
 
   function mousemove(event, d) {
-    const [x, y] = d3.pointer(event);
+    
     div
       .text(d.data.login + ", " + d.data.contributions)
-      .style("left", (x + 800) + "px")
-      .style("top", (y + 200) + "px");
+      .style("left", (d.x + 150) + "px")
+      .style("top", (d.y  ) + "px")
+    
   }
 
-  function mouseout() {
+  function mouseout(d) {
     div.style("display", "none");
   }
 
