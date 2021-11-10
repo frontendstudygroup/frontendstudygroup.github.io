@@ -60,8 +60,6 @@ const Bubblechart = (aData) => {
     .attr("y", 0);
 
 
-
-
   node.append("circle")
     .attr('r', function (d) {
       return d.r / (Math.sqrt(1.5));
@@ -85,27 +83,14 @@ const Bubblechart = (aData) => {
   function mousemove(event, d) {
     const [x, y] = d3.pointer(event);
     div
-      .text(x + ", " + y)
-      .style("left", (x) + "px")
-      .style("top", (y) + "px");
+      .text(d.data.login + ", " + d.data.contributions)
+      .style("left", (x + 800) + "px")
+      .style("top", (y + 200) + "px");
   }
 
   function mouseout() {
     div.style("display", "none");
   }
-
-
-  node.append("text")
-    .attr("dy", ".3em")
-    .style("text-anchor", "middle")
-    .text(function (d) { return d.data.login })
-    .style("fill", "#ffffff");
-
-  node.append("text")
-    .attr("dy", "2em")
-    .style("text-anchor", "middle")
-    .text(function (d) { return d.data.contributions })
-    .style("fill", "#EEEfff");
 
 
 
