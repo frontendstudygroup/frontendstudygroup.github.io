@@ -4,6 +4,7 @@ import { createMemoryHistory } from 'history';
 import SingleResource from '../SingleResource/SingleResource';
 import Resources from "./Resources";
 import Toggle from "../Toggle";
+import axios from "axios";
 
 // test.afterEach(cleanup)
 
@@ -27,16 +28,35 @@ test("resource body", () => {
     const resourceBody = screen.getByTestId("body");
     expect(resourceBody).toBeInTheDocument();
 });
-test("link working", () => {
-    const history = createMemoryHistory();
-    history.push = jest.fn();
+// test("link working", () => {
+//     const history = createMemoryHistory();
+//     history.push = jest.fn();
 
-    const { getByText } = render(
-        <MemoryRouter history={history}>
-          <Link to={`/resources/${resource.id}`}>More info</Link>
-        </MemoryRouter>
-      );
 
-      fireEvent.click(getByText('More info'));
-      expect(history.push).toHaveBeenCalledWith(`/resources/${resource.id}`);
+jest.mock('axios');
+
+it('returns the first resource', async () => {
+  axios.get.mockResolvedValue({
+    data: [
+      {
+        userId: 1,
+        id: 1,
+        title: 'My First Album'
+      }
+    ]
+  });
+
+  const resource = await SingleResource();
+  expect(resource).toHaveBeenCalledTimes('/resources/1');
 });
+
+      
+    // const { getByText } = render(
+    //     <MemoryRouter history={history}>
+    //       <Link to={`/resources/1`}>More info</Link>
+    //     </MemoryRouter>
+    //   );
+
+    //   fireEvent.click(getByText('More info'));
+    //   expect(history.push).toHaveBeenCalledWith(`resources/1`);
+// });
