@@ -1,0 +1,19 @@
+text {
+  font: 14px sans-serif;
+  fill: #fff;
+  transition: all 0.3s;
+}
+
+.label {
+  fill: #000;
+}
+
+.chart {
+  width: 1200px;
+  height: 1060px;
+}
+
+.chart-svg {
+  width: 100%;
+  height: 100%;
+}
