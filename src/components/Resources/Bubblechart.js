@@ -28,9 +28,9 @@ const Bubblechart = (aData) => {
 
 
   let root = d3.hierarchy(jsonToDisplay)
-    .sum(function (d) { console.log(d.id); return d.id; })
-
-    .sort(function (a, b) { return b.id - a.id });
+    .sort(function (b,a) {  return d3.ascending(b.contributions,a.contributions); })
+    .sum(function (d) {  return d.contributions; })
+   
   
   
   bubble(root);
