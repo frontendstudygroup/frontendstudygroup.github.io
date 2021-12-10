@@ -18,11 +18,14 @@ const Bubblechart = (aData) => {
   }
 
   let svg = d3.select('#chart').append('svg')
+
     .attr('viewBox', '0 0 ' + (diameter + margin.right) + ' ' + diameter)
     .attr('width', (diameter + margin.right))
     .attr('height', diameter)
-    .attr('class', 'chart-svg')
-    
+    .attr('class', 'chart-svg');
+
+
+
 
 
   let root = d3.hierarchy(jsonToDisplay)
@@ -57,7 +60,8 @@ const Bubblechart = (aData) => {
     .attr("x", 0)
     .attr("y", 0);
 
-  
+
+
 
   node.append("circle")
 
