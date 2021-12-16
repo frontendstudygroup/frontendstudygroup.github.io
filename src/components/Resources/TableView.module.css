@@ -1,4 +1,4 @@
-table {
+.resource-table {
   text-align: center;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -6,22 +6,22 @@ table {
   margin-bottom: 45px;
 }
 
-table td,
-table th {
+.resource-table-data,
+.resource-table-head {
   border: 1px solid #ddd;
   padding: 40px;
   padding-right: 78px;
 }
 
-table tr:nth-child(even) {
+.resource-table-row:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-table tr:hover {
+.resource-table-row:hover {
   background-color: #ddd;
 }
 
-table th {
+.resource-table-head {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
