@@ -65,3 +65,7 @@ For now, just open the Amplify provided domain and see your React app running on
 ![App deployed](readme-assets/07-deployed.png)
 
 ## Next Steps
+
+If you don't have an AWS account yet, it is fairly easy to sign up and create one. AWS offers a 12-months free tier that allows you to explore and gain hands-on experiences on most of the services. On top of that, there are also short term free trials and always free offers depending on the services you use. For more information, check out [https://aws.amazon.com/free/](https://aws.amazon.com/free/).
+
+If you'd like to further explore AWS Amplify and learn advanced usages, check out the [community resources on AWS Amplify homepage](https://amplify.aws/community/resources), where you can find self-paced workshops and slide decks.
