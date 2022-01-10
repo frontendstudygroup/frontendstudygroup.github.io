@@ -9,6 +9,7 @@ import Contact from "./ContactUs/Contact";
 import About from "./About/About";
 import TableView from  "./Resources/TableView";
 import GitApi from "./Api/GitApi";
+import NewHomepage from './NewHomepage/Homepage';
 
 
 const Router = () => (
@@ -24,6 +25,8 @@ const Router = () => (
       <Route exact path="/about" component={About} />
       <Route exact path="/TableView" component={TableView} />
       <Route exact path="/contributor" component={GitApi} />
+      <Route exact path="/NewHomepage" component={NewHomepage} />
+
 
     </Switch>
     <Footer/>

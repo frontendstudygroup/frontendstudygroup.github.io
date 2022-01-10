@@ -1,0 +1,23 @@
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+.homepage-table {
+    display: table;
+    border-spacing: 150px;
+  
+}
+.homepage-table-row {
+    display:flex;
+    justify-content: space-evenly;
+}
+.homepage-table-data{
+    display: flex;
+  
+}
+.homepage-table-button{
+    display: flex;
+    justify-content: space-evenly;
+}
