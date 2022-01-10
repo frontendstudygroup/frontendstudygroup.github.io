@@ -15,14 +15,15 @@ return (
         {
             ResourcesList.map(resource => 
               <article key={resource.id}> 
-                <h1>{resource.name}</h1>
-                <p className="text">{resource.body}
+                <h1 data-testid="name">{resource.name}</h1>
+                <p data-testid="body" className="text">{resource.body}
                </p>
-               <Link className="resourceLink" to={`/resources/${resource.id}`}><span>More info</span></Link>
+               <Link data-testid="link" className="resourceLink" to={`/resources/${resource.id}`}><span>More info</span></Link>
 
-              </article>)}
-      </div> 
+              </article>)
+        }
+        </div> 
       <Disclaimer />
-   </div> 
+    </div> 
   );
 }
