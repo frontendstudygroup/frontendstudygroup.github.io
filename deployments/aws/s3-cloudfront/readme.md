@@ -31,7 +31,9 @@ When you're ready to release your React app to the world, you run your build scr
 
 (By contrast, a dynamic website relies on server-side processing, including server-side scripts, such as PHP, JSP, or ASP.NET. Amazon S3 does not support server-side scripting, but AWS has other resources for hosting dynamic websites.)
 
-You can use Amazon S3 to host your React app leveraging its support for hosting static websites. If you want to use HTTPS, which is generally a requirement by default these days, you can use Amazon CloudFront to serve your React app hosted on S3. CloudFront also improves the performance of your website.
+You can use Amazon S3 to host your React app leveraging its support for hosting static websites. To enhance scalability and performance, you can use Amazon CloudFront as your CDN, which caches your static content in edge locations and serve clients all over the world from the nearest edge location. If you want to use HTTPS, which is generally a requirement by default these days, you can also leverage CloudFront. CloudFront assigns a default domain name and if you use this domain name, you can also use the default CloudFront SSL/TLS certificate. If you have your own certificate, you can also use it with CloudFront.
+
+![architecture diagram](s3-cloudfront.jpg)
 
 ### Host your React app on Amazon S3 
 
