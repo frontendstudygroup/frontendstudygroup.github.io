@@ -47,7 +47,7 @@ Prerequisite: the following steps assume that you have an AWS account with appro
    - Choose the **Hosting type** to be **Host a static website**.
    - Specify the **Index document** to be `index.html` (the html page that contains your React app script tag and is the entry point of your website).
    - Save the changes.
-3. Grant public read access to your webstie:
+3. Grant public read access to your website:
    - Open the **Permissions** tab in the bucket's detail page
    - **Edit**  the **Block public access (bucket settings)** section to *uncheck* **Block all public access**
    - **Edit** the **Bucket policy** section and add an S3 bucket policy to grant public read access for your website. You can use the following sample policy from the [official documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html#step4-add-bucket-policy-make-content-public). *Remember to replace the `Bucket-Name` placeholder with your bucket's name*.
